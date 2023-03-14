@@ -1,0 +1,102 @@
+@import '../abstract/variaveis';
+
+#pag0 {
+    height: 100vh;
+    position: relative;
+    top: -71px;
+}
+
+.home {
+    height: 100%;
+}
+
+.apresentacao {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    padding: 50px 5vw 0 5vw;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    gap: 0 25px;
+    .perfil {
+        img {
+            max-height: 255px;
+            max-width: 255px;
+            border-radius: 46%;
+        }
+        transition: .15s;
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.05);
+            transition: .2s;
+        }
+    }
+
+    .intro {
+        transform: translate(0, -10px);
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+
+        h1 {
+            font-size: $tamanho-fonte;
+            color: #ffff;
+            font-weight: 700;
+            text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.384);
+            border-radius: 10px;
+            @include line-gradient;
+        }
+
+        p {
+            font-family: monospace;
+            letter-spacing: 3px;
+            color: white;
+            font-size: $tamanho-fonte / 2.5;
+            line-height: 1.3rem;
+            max-width: 500px;
+            margin: 20px 0;
+
+            @include typing;
+            border-right: 4px solid;
+            width: 22ch;
+            white-space: nowrap;
+            overflow: hidden;
+            
+        }
+
+        label {
+            display: none;
+        }
+
+        #bt:hover {
+            color: black;
+            background-color: white;
+        }
+
+        @include input-gradient;
+    }
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    margin: 30px 10vw;
+
+    div {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+        img {
+            width: 20vw;
+            max-width: 150px;
+            border-radius: 20px;
+
+            position: relative;
+            left: 2px;
+        }
+    }
+}

@@ -1,0 +1,55 @@
+#pag2 {
+    @include pullBack;
+    height: 80vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    scroll-margin-top: 100px;
+}
+
+.skills {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+    gap: 50px;
+    margin-top: 50px;
+
+    .skill {
+        background-color: #212121;
+        border-radius: 30px 0 0 0;
+
+        transition: transform .2s;
+
+        &:hover {
+            transform: scale(1.15);
+            transition: transform .2s;
+        }
+
+        span {
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+
+            width: 130px;
+            height: 130px;
+
+            h2 {
+                color: $roxo;
+                font-weight: 600;
+                letter-spacing: 1px;
+            }
+
+            img {
+                margin-top: 16px;
+
+                width: 50px;
+                height: 50px;
+            }
+        }
+    }
+}

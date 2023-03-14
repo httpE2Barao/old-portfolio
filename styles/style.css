@@ -1,0 +1,737 @@
+html {
+  background-color: #13131F;
+  font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body,
+main {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  text-decoration: none;
+}
+body a,
+main a {
+  text-decoration-line: none;
+}
+
+.animate {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 1s ease-out, transform 0.5s ease-out;
+}
+
+.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+@keyframes background {
+  0% {
+    background-position-x: 0%;
+  }
+  100% {
+    background-position-x: 100%;
+  }
+}
+.gradientLine {
+  height: 6px;
+  width: 100%;
+  border-radius: 3px;
+  background: linear-gradient(to right, #DF5025, #3B05EF, #c99300);
+  background-size: 400% 100%;
+  animation: background 7s infinite alternate ease-in-out;
+}
+
+.skill .gradientLine {
+  border-radius: 0;
+}
+
+.gradientLine {
+  height: 1px;
+}
+
+header {
+  background-color: #13131F;
+  height: -moz-fit-content;
+  height: fit-content;
+  z-index: 2;
+  top: 0;
+  position: sticky;
+}
+header a {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 1000;
+}
+header a:hover {
+  cursor: pointer;
+}
+header nav {
+  height: 70px;
+  padding: 0 5vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.5rem;
+}
+header nav h2 {
+  width: 50px;
+}
+header nav .menu-icon img {
+  width: 25px;
+  padding: 6px;
+}
+header nav .menu-icon img:hover {
+  background-color: #ffffff;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+.menu-pag {
+  display: none;
+}
+
+.open {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-evenly;
+  position: fixed;
+  z-index: 2;
+  width: 100vw;
+  height: 90vh;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  text-shadow: 0 0 10px black;
+}
+.open h2 {
+  color: white;
+  font-weight: bold;
+  font-size: 3rem;
+}
+.open h2 div {
+  height: 6px;
+}
+.open ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 2em;
+  text-align: center;
+  text-decoration: none;
+}
+.open ul li {
+  height: 50px;
+}
+.open ul li a {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 600;
+  transition: 0.5s;
+}
+.open ul li a:hover {
+  color: blueviolet;
+  font-size: 3rem;
+  transition: 0.3s;
+}
+.open ul li a::before {
+  content: "./";
+}
+
+#pag0 {
+  height: 100vh;
+  position: relative;
+  top: -71px;
+}
+
+.home {
+  height: 100%;
+}
+
+.apresentacao {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  padding: 50px 5vw 0 5vw;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  gap: 0 25px;
+}
+.apresentacao .perfil {
+  transition: 0.15s;
+}
+.apresentacao .perfil img {
+  max-height: 255px;
+  max-width: 255px;
+  border-radius: 46%;
+}
+.apresentacao .perfil:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: 0.2s;
+}
+.apresentacao .intro {
+  transform: translate(0, -10px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+.apresentacao .intro h1 {
+  font-size: 3rem;
+  color: white;
+  font-weight: 700;
+  text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.384);
+  border-radius: 10px;
+}
+.apresentacao .intro h1 .gradientLine {
+  height: 6px;
+  width: 100%;
+  border-radius: 3px;
+  background: linear-gradient(to right, #DF5025, #3B05EF, #c99300);
+  background-size: 400% 100%;
+  animation: background 7s infinite alternate ease-in-out;
+}
+.apresentacao .intro h1 .skill .gradientLine {
+  border-radius: 0;
+}
+.apresentacao .intro p {
+  font-family: monospace;
+  letter-spacing: 3px;
+  color: white;
+  font-size: 1.2rem;
+  line-height: 1.3rem;
+  max-width: 500px;
+  margin: 20px 0;
+  animation: typing 3s steps(17), blinking 0.5s infinite step-end alternate;
+  border-right: 4px solid;
+  width: 22ch;
+  white-space: nowrap;
+  overflow: hidden;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+@keyframes blinking {
+  50% {
+    border-color: transparent;
+  }
+}
+.apresentacao .intro label {
+  display: none;
+}
+.apresentacao .intro #bt:hover {
+  color: black;
+  background-color: white;
+}
+.apresentacao .intro #bt {
+  background: linear-gradient(to right, #DF5025, #3B05EF, #c99300);
+  background-size: 400% 100%;
+  animation: background 7s infinite alternate ease-in-out;
+  color: white;
+  width: 200px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  font-weight: 550;
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.486);
+  box-shadow: 0px 3px 4px rgba(39, 39, 39, 0.6509803922);
+  transition: transform 0.3s, box-shadow 0.2s;
+}
+.apresentacao .intro #bt:hover {
+  cursor: pointer;
+  background-color: white;
+  color: #000000;
+  background-image: none;
+  transform: translate(0px, -3px);
+  box-shadow: 0px 5px 8px rgba(39, 39, 39, 0.7803921569);
+  transition: transform 0.3s;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  margin: 30px 10vw;
+}
+.cards div {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.cards div img {
+  width: 20vw;
+  max-width: 150px;
+  border-radius: 20px;
+  position: relative;
+  left: 2px;
+}
+
+#pag2 {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  scroll-margin-top: 100px;
+}
+#pag2 .gradientLine {
+  height: 6px;
+  width: 100%;
+  border-radius: 3px;
+  background: linear-gradient(to right, #DF5025, #3B05EF, #c99300);
+  background-size: 400% 100%;
+  animation: background 7s infinite alternate ease-in-out;
+}
+#pag2 .skill .gradientLine {
+  border-radius: 0;
+}
+#pag2 a {
+  color: white;
+  position: relative;
+  left: -5px;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px 30px;
+  margin: 15px 0 25px;
+  font-size: 3rem;
+  font-weight: 600;
+  text-decoration: none;
+  font-weight: bold;
+}
+#pag2 a h1::before {
+  content: "./";
+}
+
+.skills {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 50px;
+}
+.skills .skill {
+  background-color: #212121;
+  border-radius: 30px 0 0 0;
+  transition: transform 0.2s;
+}
+.skills .skill:hover {
+  transform: scale(1.15);
+  transition: transform 0.2s;
+}
+.skills .skill span {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 130px;
+  height: 130px;
+}
+.skills .skill span h2 {
+  color: #8257E6;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.skills .skill span img {
+  margin-top: 16px;
+  width: 50px;
+  height: 50px;
+}
+
+#pag3 {
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  scroll-margin-top: 100px;
+}
+#pag3 .gradientLine {
+  height: 6px;
+  width: 100%;
+  border-radius: 3px;
+  background: linear-gradient(to right, #DF5025, #3B05EF, #c99300);
+  background-size: 400% 100%;
+  animation: background 7s infinite alternate ease-in-out;
+}
+#pag3 .skill .gradientLine {
+  border-radius: 0;
+}
+#pag3 a {
+  color: white;
+  position: relative;
+  left: -5px;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px 30px;
+  margin: 15px 0 25px;
+  font-size: 3rem;
+  font-weight: 600;
+  text-decoration: none;
+  font-weight: bold;
+}
+#pag3 a h1::before {
+  content: "./";
+}
+#pag3 label {
+  display: none;
+}
+#pag3 input {
+  color: black;
+  margin-bottom: 40px;
+}
+#pag3 #bt {
+  background: linear-gradient(to right, #DF5025, #3B05EF, #c99300);
+  background-size: 400% 100%;
+  animation: background 7s infinite alternate ease-in-out;
+  color: white;
+  width: 200px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  font-weight: 550;
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.486);
+  box-shadow: 0px 3px 4px rgba(39, 39, 39, 0.6509803922);
+  transition: transform 0.3s, box-shadow 0.2s;
+}
+#pag3 #bt:hover {
+  cursor: pointer;
+  background-color: white;
+  color: #000000;
+  background-image: none;
+  transform: translate(0px, -3px);
+  box-shadow: 0px 5px 8px rgba(39, 39, 39, 0.7803921569);
+  transition: transform 0.3s;
+}
+#pag3 .projetos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#pag3 .projetos .projeto {
+  color: white;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #212121;
+  padding: 0 20px 20px;
+  margin: 5px 30px 30px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px rgba(39, 39, 39, 0.6509803922);
+}
+#pag3 .projetos .projeto h2 {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px 0;
+  font-weight: 600;
+}
+#pag3 .projetos .projeto img {
+  width: 80vw;
+  max-width: 300px;
+  border-radius: 10px;
+}
+#pag3 .projetos .projeto img:hover {
+  cursor: pointer;
+}
+
+#pag1 {
+  height: 80vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  scroll-margin-top: 150px;
+}
+#pag1 .gradientLine {
+  height: 6px;
+  width: 100%;
+  border-radius: 3px;
+  background: linear-gradient(to right, #DF5025, #3B05EF, #c99300);
+  background-size: 400% 100%;
+  animation: background 7s infinite alternate ease-in-out;
+}
+#pag1 .skill .gradientLine {
+  border-radius: 0;
+}
+#pag1 a {
+  color: white;
+  position: relative;
+  left: -5px;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px 30px;
+  margin: 15px 0 25px;
+  font-size: 3rem;
+  font-weight: 600;
+  text-decoration: none;
+  font-weight: bold;
+}
+#pag1 a h1::before {
+  content: "./";
+}
+#pag1 #bt {
+  background: linear-gradient(to right, #DF5025, #3B05EF, #c99300);
+  background-size: 400% 100%;
+  animation: background 7s infinite alternate ease-in-out;
+  color: white;
+  width: 200px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  font-weight: 550;
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.486);
+  box-shadow: 0px 3px 4px rgba(39, 39, 39, 0.6509803922);
+  transition: transform 0.3s, box-shadow 0.2s;
+}
+#pag1 #bt:hover {
+  cursor: pointer;
+  background-color: white;
+  color: #000000;
+  background-image: none;
+  transform: translate(0px, -3px);
+  box-shadow: 0px 5px 8px rgba(39, 39, 39, 0.7803921569);
+  transition: transform 0.3s;
+}
+#pag1 label {
+  display: none;
+}
+#pag1 input {
+  position: relative;
+  left: 3px;
+}
+#pag1 .sobreMim {
+  width: 88vw;
+  height: 60%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+#pag1 .sobreMim .resumo {
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: center;
+  justify-content: center;
+}
+#pag1 .sobreMim .resumo p {
+  padding-bottom: 40px;
+  word-spacing: 3px;
+  line-height: 1.5em;
+  letter-spacing: 1px;
+  max-width: 730px;
+  color: white;
+}
+
+#pag4 {
+  height: 100vh;
+  scroll-margin-top: 100px;
+  margin: 100px 10vw 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+#pag4 .gradientLine {
+  height: 6px;
+  width: 100%;
+  border-radius: 3px;
+  background: linear-gradient(to right, #DF5025, #3B05EF, #c99300);
+  background-size: 400% 100%;
+  animation: background 7s infinite alternate ease-in-out;
+}
+#pag4 .skill .gradientLine {
+  border-radius: 0;
+}
+#pag4 a {
+  color: white;
+  position: relative;
+  left: -5px;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px 30px;
+  margin: 15px 0 25px;
+  font-size: 3rem;
+  font-weight: 600;
+  text-decoration: none;
+  font-weight: bold;
+}
+#pag4 a h1::before {
+  content: "./";
+}
+#pag4 .contatos {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-top: 75px;
+  gap: 75px;
+}
+#pag4 .contatos .contato {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 15px;
+  color: white;
+}
+#pag4 .contatos .contato h2 {
+  font-weight: 600;
+}
+#pag4 .contatos .contato p {
+  font-size: 0.9375rem;
+  color: #8257E6;
+}
+#pag4 .contatos .contato img {
+  background-color: #212121;
+  border-radius: 30px;
+  padding: 15px;
+  width: 50px;
+  height: 50px;
+}
+#pag4 .contatos .contato:hover {
+  cursor: pointer;
+  transform: scale(1.15);
+  transition: transform 0.3s;
+}
+
+footer {
+  margin-top: 65px;
+  color: white;
+  background-color: rgb(30, 30, 30);
+  height: -moz-fit-content;
+  height: fit-content;
+  text-align: left;
+}
+footer .footerconteiner {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 0 50px;
+}
+footer .footerconteiner h2 {
+  padding-bottom: 15px;
+}
+footer .footerconteiner ul {
+  padding: 50px 20px;
+  align-self: center;
+}
+footer .footerconteiner ul li {
+  margin-bottom: 4px;
+}
+footer .footerconteiner ul li a {
+  color: white;
+  text-decoration: none;
+}
+footer .degrade__footer {
+  background: linear-gradient(to right, #DF5025, #3B05EF, #c99300);
+  background-size: 400% 100%;
+  animation: background 7s infinite alternate ease-in-out;
+  text-align: center;
+  width: 100vw;
+  height: 100%;
+  padding: 7px;
+}
+@media screen and (max-width: 680px) {
+  footer {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .apresentacao .intro {
+    align-items: flex-start;
+    text-align: left;
+  }
+  .apresentacao .perfil img {
+    position: relative;
+    top: -5px;
+    max-width: 45vw;
+    max-height: 40vw;
+  }
+  .projetos h2 {
+    font-size: 1.5rem;
+  }
+  .formulario label {
+    font-size: 1.5rem;
+  }
+  .formulario #email, .formulario textarea {
+    font-size: 1.2rem;
+  }
+  .footerconteiner h2 {
+    font-size: 2rem;
+  }
+  .footerconteiner li {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 650px) {
+  a {
+    font-size: 3.5vw;
+  }
+  p {
+    font-size: 3.1818181818vw;
+  }
+  .apresentacao .intro {
+    transform: translate(0, -10vh);
+  }
+  .title {
+    font-size: 7vw;
+  }
+  .projetos h2 {
+    font-size: 3.8888888889vw;
+  }
+  .formulario label {
+    font-size: 4.6666666667vw;
+  }
+  .formulario #email, .formulario textarea {
+    font-size: 3.5vw;
+  }
+  .footerconteiner h2 {
+    font-size: 5.8333333333vw;
+  }
+  .footerconteiner li {
+    font-size: 4.1176470588vw;
+  }
+  .footerconteiner li a {
+    font-size: 4.1176470588vw;
+  }
+}
+@media screen and (max-width: 990px) {
+  #pag1 .sobreMim {
+    flex-direction: column;
+    padding: 0;
+    align-items: center;
+  }
+  #pag1 .sobreMim .perfil {
+    margin: 0 50px 30px 50px;
+    position: relative;
+    right: 10px;
+  }
+  #pag1 .sobreMim .resumo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  #pag1 .sobreMim .resumo h2 {
+    padding: 20px 0;
+  }
+}
+@media screen and (min-width: 900px) {
+  .apresentacao .perfil img {
+    max-width: 400px;
+    max-height: 400px;
+  }
+}/*# sourceMappingURL=style.css.map */
