@@ -585,6 +585,7 @@ header nav .menu-icon img:hover {
   align-items: center;
   gap: 15px;
   color: white;
+  transition: transform 0.3s;
 }
 #pag4 .contatos .contato h2 {
   font-weight: 600;
