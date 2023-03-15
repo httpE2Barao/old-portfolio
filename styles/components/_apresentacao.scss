@@ -25,12 +25,8 @@
             max-width: 255px;
             border-radius: 46%;
         }
+        @include boxHover;
         transition: .15s;
-        &:hover {
-            cursor: pointer;
-            transform: scale(1.05);
-            transition: .2s;
-        }
     }
 
     .intro {
