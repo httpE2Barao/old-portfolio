@@ -515,9 +515,8 @@ header nav .menu-icon img:hover {
 #pag1 label {
   display: none;
 }
-#pag1 input {
-  position: relative;
-  left: 3px;
+#pag1 #bt {
+  width: 150px;
 }
 #pag1 .sobreMim {
   width: 88vw;
@@ -529,8 +528,11 @@ header nav .menu-icon img:hover {
   gap: 20px;
 }
 #pag1 .sobreMim .resumo {
+  display: flex;
+  flex-flow: column;
   width: -moz-fit-content;
   width: fit-content;
+  align-items: center;
   text-align: center;
   justify-content: center;
 }
@@ -647,7 +649,7 @@ header nav .menu-icon img:hover {
     font-size: 3.5vw;
   }
   p {
-    font-size: 3.1818181818vw;
+    font-size: 2.8vw;
   }
   .apresentacao .intro {
     transform: translate(0, -10vh);
@@ -686,7 +688,6 @@ header nav .menu-icon img:hover {
     right: 10px;
   }
   #pag1 .sobreMim .resumo {
-    display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;

@@ -14,9 +14,8 @@
     label{
         display: none;
     }
-    input{
-        position: relative;
-        left: 3px;
+    #bt{
+        width: 150px;
     }
     .sobreMim{
         width: 88vw;
@@ -27,7 +26,10 @@
         justify-content: center;
         gap: 20px;
         .resumo{
+            display: flex;
+            flex-flow: column;
             width: fit-content;
+            align-items: center;
             text-align: center;
             justify-content: center;
             p{
