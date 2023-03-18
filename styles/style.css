@@ -388,7 +388,7 @@ header nav .menu-icon img:hover {
 }
 #pag3 input {
   color: black;
-  margin-bottom: 40px;
+  margin-top: 30px;
 }
 #pag3 #bt {
   background: linear-gradient(to right, #DF5025, #3B05EF, #c99300);
@@ -516,6 +516,7 @@ header nav .menu-icon img:hover {
   display: none;
 }
 #pag1 #bt {
+  padding: 13px 20px;
   width: 150px;
 }
 #pag1 .sobreMim {
@@ -645,6 +646,9 @@ header nav .menu-icon img:hover {
   }
 }
 @media screen and (max-width: 650px) {
+  #pag2 {
+    margin-bottom: 100px;
+  }
   a {
     font-size: 3.5vw;
   }
