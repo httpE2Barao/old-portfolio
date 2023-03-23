@@ -90,6 +90,9 @@ header nav .menu-icon img:hover {
   cursor: pointer;
   border-radius: 12px;
 }
+header nav .menu-icon .hidden {
+  display: none;
+}
 
 .menu-pag {
   display: none;
