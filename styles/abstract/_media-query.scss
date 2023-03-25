@@ -37,9 +37,6 @@
 }
 
 @media screen and (max-width: 650px){
-    #pag2{
-        margin-bottom: 100px;
-    }
     a{
         font-size: $tamanho-relativo-fonte / 2;
     }
@@ -101,6 +98,9 @@
             }
         }
     }
+    #pag2{
+        margin-bottom: 100px;
+    }
 } 
 @media screen and (min-width: 900px){
     .apresentacao{
@@ -110,5 +110,8 @@
                 max-height: 400px;
             }
         }
+    }
+    #pag2{
+        margin-bottom: 150px;
     }
 }

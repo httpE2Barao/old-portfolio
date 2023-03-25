@@ -279,7 +279,6 @@ header nav .menu-icon .hidden {
 }
 
 #pag2 {
-  height: 80vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -649,9 +648,6 @@ header nav .menu-icon .hidden {
   }
 }
 @media screen and (max-width: 650px) {
-  #pag2 {
-    margin-bottom: 100px;
-  }
   a {
     font-size: 3.5vw;
   }
@@ -702,10 +698,16 @@ header nav .menu-icon .hidden {
   #pag1 .sobreMim .resumo h2 {
     padding: 20px 0;
   }
+  #pag2 {
+    margin-bottom: 100px;
+  }
 }
 @media screen and (min-width: 900px) {
   .apresentacao .perfil img {
     max-width: 400px;
     max-height: 400px;
+  }
+  #pag2 {
+    margin-bottom: 150px;
   }
 }/*# sourceMappingURL=style.css.map */
