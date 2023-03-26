@@ -461,7 +461,7 @@ header nav .menu-icon .hidden {
   display: flex;
   flex-direction: column;
   align-items: center;
-  scroll-margin-top: 150px;
+  scroll-margin-top: 125px;
 }
 #pag1 .gradientLine {
   height: 6px;
@@ -540,7 +540,7 @@ header nav .menu-icon .hidden {
   justify-content: center;
 }
 #pag1 .sobreMim .resumo p {
-  padding-bottom: 40px;
+  padding: 40px 0;
   word-spacing: 3px;
   line-height: 1.5em;
   letter-spacing: 1px;
