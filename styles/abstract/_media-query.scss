@@ -1,3 +1,60 @@
+@media screen and (max-width: 490px) {
+    .apresentacao {
+        .intro {
+            h1 {
+                font-size: 8.5vw;
+            }
+            p {
+                font-size: 5vw;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 650px){
+    a{
+        font-size: $tamanho-relativo-fonte / 1.5;
+    }
+    p{
+        font-size: $tamanho-relativo-fonte / 2.5;
+    }
+    .apresentacao{
+        .perfil {
+            img {
+                max-width: 200px;
+                width: 50vw;
+            }
+        }
+    }
+    .title{
+        font-size: $tamanho-relativo-fonte;
+    }
+    .projetos{
+        h2{
+            font-size: $tamanho-relativo-fonte / 1.8;
+        }
+    }
+    .formulario{
+        label{
+            font-size: $tamanho-relativo-fonte / 1.5;
+        }
+        #email, textarea{
+            font-size: $tamanho-relativo-fonte / 2;
+        }
+    }
+    .footerconteiner{
+        h2{
+            font-size: $tamanho-relativo-fonte / 1.2;
+        }
+        li{
+            font-size: $tamanho-relativo-fonte / 1.7;
+            a{
+                font-size: $tamanho-relativo-fonte / 1.7;
+            }
+        }
+    }
+}
+
 @media screen and (min-width: 650px){
     .apresentacao{
         .intro{
@@ -36,47 +93,6 @@
     }
 }
 
-@media screen and (max-width: 650px){
-    a{
-        font-size: $tamanho-relativo-fonte / 2;
-    }
-    p{
-        font-size: $tamanho-relativo-fonte / 2.5;
-    }
-    .apresentacao{
-        .intro{
-            transform: translate(0, -10vh);
-        }
-    }
-    .title{
-        font-size: $tamanho-relativo-fonte;
-    }
-    .projetos{
-        h2{
-            font-size: $tamanho-relativo-fonte / 1.8;
-        }
-    }
-    .formulario{
-        label{
-            font-size: $tamanho-relativo-fonte / 1.5;
-        }
-        #email, textarea{
-            font-size: $tamanho-relativo-fonte / 2;
-        }
-    }
-    .footerconteiner{
-        h2{
-            font-size: $tamanho-relativo-fonte / 1.2;
-        }
-        li{
-            font-size: $tamanho-relativo-fonte / 1.7;
-            a{
-                font-size: $tamanho-relativo-fonte / 1.7;
-            }
-        }
-    }
-}
-
 @media screen and (max-width: 990px){
     #pag1{
         .sobreMim{
@@ -102,6 +118,7 @@
         margin-bottom: 100px;
     }
 } 
+
 @media screen and (min-width: 900px){
     .apresentacao{
         .perfil{
@@ -113,5 +130,8 @@
     }
     #pag2{
         margin-bottom: 150px;
+        .skills {
+            width: 60%;
+        }
     }
 }

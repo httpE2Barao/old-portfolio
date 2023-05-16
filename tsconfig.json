@@ -1,10 +1,10 @@
 {
     "compilerOptions": {
-        "outDir": "app/dist",
-        "target": "ES6",
+        "outDir": "src/ts/dist",
+        "target": "ES2022",
         "noImplicitAny": true,
         "strictNullChecks": true,
         "experimentalDecorators": true
     },
-    "include": ["app/src/**/*"]
+    "include": ["src/ts/src/**/*"]
 }

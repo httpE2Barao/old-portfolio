@@ -55,8 +55,7 @@ main a {
 
 header {
   background-color: #13131F;
-  height: -moz-fit-content;
-  height: fit-content;
+  height: 100%;
   z-index: 2;
   top: 0;
   position: sticky;
@@ -146,7 +145,7 @@ header nav .menu-icon .hidden {
 }
 
 #pag0 {
-  height: 100vh;
+  height: 89vh;
   position: relative;
   top: -71px;
 }
@@ -156,10 +155,10 @@ header nav .menu-icon .hidden {
 }
 
 .apresentacao {
-  height: 100%;
+  height: 89vh;
   display: flex;
   flex-wrap: wrap-reverse;
-  padding: 50px 5vw 0 5vw;
+  padding: 11vh 5vw 0 5vw;
   justify-content: space-around;
   align-items: center;
   text-align: center;
@@ -206,15 +205,15 @@ header nav .menu-icon .hidden {
 }
 .apresentacao .intro p {
   font-family: monospace;
-  letter-spacing: 3px;
+  letter-spacing: 0.5ch;
   color: white;
   font-size: 1.2rem;
   line-height: 1.3rem;
   max-width: 500px;
   margin: 20px 0;
   animation: typing 3s steps(17), blinking 0.5s infinite step-end alternate;
-  border-right: 4px solid;
-  width: 22ch;
+  border-right: 3px solid;
+  width: 25.2ch;
   white-space: nowrap;
   overflow: hidden;
 }
@@ -620,6 +619,47 @@ header nav .menu-icon .hidden {
   transition: transform 0.3s;
 }
 
+@media screen and (max-width: 490px) {
+  .apresentacao .intro h1 {
+    font-size: 8.5vw;
+  }
+  .apresentacao .intro p {
+    font-size: 5vw;
+  }
+}
+@media screen and (max-width: 650px) {
+  a {
+    font-size: 4.6666666667vw;
+  }
+  p {
+    font-size: 2.8vw;
+  }
+  .apresentacao .perfil img {
+    max-width: 200px;
+    width: 50vw;
+  }
+  .title {
+    font-size: 7vw;
+  }
+  .projetos h2 {
+    font-size: 3.8888888889vw;
+  }
+  .formulario label {
+    font-size: 4.6666666667vw;
+  }
+  .formulario #email, .formulario textarea {
+    font-size: 3.5vw;
+  }
+  .footerconteiner h2 {
+    font-size: 5.8333333333vw;
+  }
+  .footerconteiner li {
+    font-size: 4.1176470588vw;
+  }
+  .footerconteiner li a {
+    font-size: 4.1176470588vw;
+  }
+}
 @media screen and (min-width: 650px) {
   .apresentacao .intro {
     align-items: flex-start;
@@ -645,38 +685,6 @@ header nav .menu-icon .hidden {
   }
   .footerconteiner li {
     font-size: 1.2rem;
-  }
-}
-@media screen and (max-width: 650px) {
-  a {
-    font-size: 3.5vw;
-  }
-  p {
-    font-size: 2.8vw;
-  }
-  .apresentacao .intro {
-    transform: translate(0, -10vh);
-  }
-  .title {
-    font-size: 7vw;
-  }
-  .projetos h2 {
-    font-size: 3.8888888889vw;
-  }
-  .formulario label {
-    font-size: 4.6666666667vw;
-  }
-  .formulario #email, .formulario textarea {
-    font-size: 3.5vw;
-  }
-  .footerconteiner h2 {
-    font-size: 5.8333333333vw;
-  }
-  .footerconteiner li {
-    font-size: 4.1176470588vw;
-  }
-  .footerconteiner li a {
-    font-size: 4.1176470588vw;
   }
 }
 @media screen and (max-width: 990px) {
@@ -709,5 +717,8 @@ header nav .menu-icon .hidden {
   }
   #pag2 {
     margin-bottom: 150px;
+  }
+  #pag2 .skills {
+    width: 60%;
   }
 }/*# sourceMappingURL=style.css.map */
