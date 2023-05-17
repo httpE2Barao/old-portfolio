@@ -40,6 +40,7 @@ function App() {
             { title: 'Alura Books', src: './Imagens/project_alura-books.png', link: 'https://alura-books-httpe2barao.vercel.app/'},
             { title: 'Projeto de Login', src: './Imagens/project_login-responsivo.png', link: 'https://projeto-login-three.vercel.app/'},
             { title: 'Moni Bank', src: './Imagens/project_moni-bank.png', link: 'https://httpe2barao.github.io/MoniBank/pages/abrir-conta-form.html'},
+            { title: 'Books', src: './Imagens/project_books-react.png', link: 'https://books-react-project-a.vercel.app/'},
           ]}
         />
 
