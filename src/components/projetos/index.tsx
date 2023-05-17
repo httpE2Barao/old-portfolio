@@ -1,12 +1,16 @@
 import React from "react";
 
-interface projeto {
-    title: string
-    src: string
-    onClick: string
+interface projetosProps {
+    projetos: projeto[];
 }
 
-const Projetos = ({ projetos }) => {
+interface projeto {
+    title: string;
+    src: string;
+    link: string;
+}
+
+const Projetos = ({ projetos }: projetosProps) => {
     return (
         <article id="pag3" className="animate">
             <a href="#pag3">
@@ -22,7 +26,7 @@ const Projetos = ({ projetos }) => {
                     </h2>
                     <img src={projeto.src} alt={`Projeto ${projeto.title}`}
                         onClick={(event: React.MouseEvent<HTMLElement>) => 
-                        window.open(projeto.onClick)}/>
+                        window.open(projeto.link)}/>
                 </li>
                 )
             })}

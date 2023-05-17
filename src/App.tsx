@@ -1,10 +1,11 @@
 import React from "react";
+import './ts/main'
 import Header from "./components/header";
 import Apresentacao from "./components/apresentacao";
 import Sobre from "./components/sobre";
-import './ts/src/app'
 import Habilidades from "./components/habilidades";
 import Projetos from "./components/projetos";
+import Contatos from "./components/contatos";
 
 function App() {
     return (
@@ -30,17 +31,25 @@ function App() {
 
         <Projetos 
           projetos={[
-            { title: 'Sincronário Maia', src: './Imagens/project_sincronario.png', onClick: 'https://sincronario.vercel.app/'},
-            { title: 'Video Play', src: './Imagens/project_video-play.png', onClick: 'https://video-play-nine.vercel.app/'},
-            { title: 'Stopwatch', src: './Imagens/project_stopwatch.png', onClick: 'https://stopwatch-react-app0.vercel.app/'},
-            { title: 'Número secreto', src: './Imagens/project_secret-number.png', onClick: 'https://jogo-numero-secreto-3425ysutw-httpe2barao.vercel.app/'},
-            { title: 'Negociações', src: './Imagens/project_negociacoes.png', onClick: 'https://code-study-rho.vercel.app/TypeScript/Negocia%C3%A7%C3%B5es/app/dist/index.html'},
-            { title: 'Alura Books', src: './Imagens/project_alura-books.png', onClick: 'https://alura-books-httpe2barao.vercel.app/'},
-            { title: 'Projeto de Login', src: './Imagens/project_login-responsivo.png', onClick: 'https://projeto-login-three.vercel.app/'},
-            { title: 'Moni Bank', src: './Imagens/project_moni-bank.png', onClick: 'https://httpe2barao.github.io/MoniBank/pages/abrir-conta-form.html'},
+            { title: 'Sincronário Maia', src: './Imagens/project_sincronario.png', link: 'https://sincronario.vercel.app/'},
+            { title: 'Video Play', src: './Imagens/project_video-play.png', link: 'https://video-play-nine.vercel.app/'},
+            { title: 'Stopwatch', src: './Imagens/project_stopwatch.png', link: 'https://stopwatch-react-app0.vercel.app/'},
+            { title: 'Número secreto', src: './Imagens/project_secret-number.png', link: 'https://jogo-numero-secreto-3425ysutw-httpe2barao.vercel.app/'},
+            { title: 'Negociações', src: './Imagens/project_negociacoes.png', link: 'https://code-study-rho.vercel.app/TypeScript/Negocia%C3%A7%C3%B5es/app/dist/index.html'},
+            { title: 'Alura Books', src: './Imagens/project_alura-books.png', link: 'https://alura-books-httpe2barao.vercel.app/'},
+            { title: 'Projeto de Login', src: './Imagens/project_login-responsivo.png', link: 'https://projeto-login-three.vercel.app/'},
+            { title: 'Moni Bank', src: './Imagens/project_moni-bank.png', link: 'https://httpe2barao.github.io/MoniBank/pages/abrir-conta-form.html'},
           ]}
         />
 
+        <Contatos
+          contatos={[
+          { title: 'LinkedIn', src: './Imagens/linkedin.svg', info: '@e2barao',  link: 'https://www.linkedin.com/in/e2barao/'},
+          { title: 'GitHub', src: './Imagens/github.svg', info: '@httpE2Barao',  link: 'https://www.github.com/httpE2Barao'},
+          { title: 'WhatsApp', src: './Imagens/phone.svg', info: '(41) 99804-6755',  link: 'https://api.whatsapp.com/send?phone=551998046755'},
+          { title: 'E-mail', src: './Imagens/mail.svg', info: 'e2barao@hotmail.com',  link: 'mailto:e2barao@hotmail.com'},
+          ]}
+        />
 
       </div>
     )

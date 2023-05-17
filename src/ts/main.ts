@@ -1,9 +1,9 @@
 import { ScrollAnimation } from "./animation";
-import { Controller } from "./controller";
 import { ShowProjectsDescription } from "./showDescription";
+// import { Controller } from "./controller";
 
-const controller = new Controller();
+// const controller = new Controller();
 
 ScrollAnimation();
-controller.AddListeners()
+// controller.AddListeners()
 ShowProjectsDescription()

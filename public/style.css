@@ -317,7 +317,7 @@ header nav .menu-icon .hidden {
   flex-flow: row wrap;
   justify-content: center;
   gap: 50px;
-  margin: 50px 20px 0;
+  margin: 25px 20px 0;
 }
 .skills .skill {
   background-color: #212121;

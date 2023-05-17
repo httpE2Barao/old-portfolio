@@ -1,13 +1,17 @@
 import React from 'react'
 
-interface item {
-    title: string
-    src: string
-    alt: string
-    link: string
+interface itensProps {
+    itens: item[];
 }
 
-const Habilidades = ({ itens }) => {
+interface item {
+    title: string;
+    src: string;
+    alt: string;
+    link: string;
+}
+
+const Habilidades = ({ itens }: itensProps) => {
     return (
         <article id="pag2" className="animate">
 
