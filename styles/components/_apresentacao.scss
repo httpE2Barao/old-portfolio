@@ -21,9 +21,11 @@
     gap: 0 25px;
     .perfil {
         img {
-            max-height: 255px;
-            max-width: 255px;
-            border-radius: 46%;
+            transform: translateY(-9%);
+            max-height: 300px;
+            max-width: 300px;
+            -webkit-clip-path: polygon(19% 15%, 92% 10%, 84% 93%, 13% 100%);
+            clip-path: polygon(19% 15%, 92% 10%, 84% 93%, 13% 100%);
         }
         @include boxHover;
         transition: .15s;
