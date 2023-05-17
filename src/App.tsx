@@ -21,10 +21,11 @@ function App() {
           itens={[
             { title: 'HTML5', src: 'Imagens/html.svg', alt: 'HyperText Markup Language', link: 'https://developer.mozilla.org/pt-BR/docs/Web/HTML' },
             { title: 'CSS3', src: 'Imagens/css.svg', alt: 'Cascading Style Sheets', link: 'https://developer.mozilla.org/pt-BR/docs/Web/CSS' }, 
-            { title: 'SASS', src: 'Imagens/sass.svg', alt: 'Syntactically Awesome Style Sheets', link: 'https://sass-lang.com/' },
             { title: 'JavaScript', src: 'Imagens/javascript.svg', alt: 'Linguagem de Programação', link: 'https://developer.mozilla.org/pt-BR/docs/Web/JavaScript' },
             { title: 'TypeScript', src: 'Imagens/typescript.svg', alt: 'Linguagem de Programação', link: 'https://www.typescriptlang.org/' },
+            { title: 'SASS', src: 'Imagens/sass.svg', alt: 'Syntactically Awesome Style Sheets', link: 'https://sass-lang.com/' },
             { title: 'React', src: 'Imagens/react.svg', alt: 'Biblioteca de Javascript e Typescript', link: 'https://react.dev/' },
+            { title: 'Figma', src: 'Imagens/figma.svg', alt: 'Editor gráfico de design', link: 'https://www.figma.com' },
             { title: 'CSS in JS', src: 'Imagens/styledcomponents.svg', alt: 'Styled-components', link: 'https://styled-components.com/' },
           ]}
         />
