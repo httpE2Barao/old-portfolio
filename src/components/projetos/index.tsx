@@ -19,24 +19,24 @@ const Projetos = ({ projetos }: projetosProps) => {
             </a>
 
             <ul className="projetos">
-            {projetos.map((projeto: projeto ) => {
-                return (
-                    <li className="projeto">
-                    <h2>{projeto.title}<div className="gradientLine"></div>
-                    </h2>
-                    <img src={projeto.src} alt={`Projeto ${projeto.title}`}
-                        onClick={(event: React.MouseEvent<HTMLElement>) => 
-                        window.open(projeto.link)}/>
-                </li>
-                )
-            })}
+                {projetos.map((projeto: projeto) => {
+                    return (
+                        <li className="projeto" key={projeto.title}>
+                            <h2>{projeto.title}<div className="gradientLine"></div>
+                            </h2>
+                            <img src={projeto.src} alt={`Projeto ${projeto.title}`}
+                                onClick={(event: React.MouseEvent<HTMLElement>) =>
+                                    window.open(projeto.link)} />
+                        </li>
+                    )
+                })}
             </ul>
 
             <label htmlFor="bt">Repositório</label>
             <input type="button" id="bt" value="Repositório" src="#"
-                onClick={(event: React.MouseEvent<HTMLInputElement>) => 
+                onClick={(event: React.MouseEvent<HTMLInputElement>) =>
                     window.open('https://code-study-rho.vercel.app/')}
-                />
+            />
         </article>
     )
 }

@@ -22,7 +22,10 @@ const Contatos: React.FC<ContatosProps> = ({ contatos }) => {
                 <section className="contatos">
                     {contatos.map((contato: Contato) => {
                         return (
-                            <div className="contato" onClick={(event: React.MouseEvent<HTMLElement>) =>
+                            <div 
+                            className="contato" 
+                            key={contato.title}
+                            onClick={(event: React.MouseEvent<HTMLElement>) =>
                                 window.open(contato.link)} >
                                 <img src={contato.src} alt={`Entre em contato por ${contato.title}`}></img>
                                 <h2>{contato.title}</h2>

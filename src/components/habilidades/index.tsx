@@ -22,7 +22,6 @@ const Habilidades = ({ itens }: itensProps) => {
 
             <ul className="skills">
                 {itens.map((item: item) => {
-                    { console.log(item) }
                     return (
                         <li
                         className='skill'

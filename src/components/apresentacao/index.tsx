@@ -21,7 +21,7 @@ const Apresentacao = () => {
             />
           </div>
           <div className="perfil">
-            <img src="./Imagens/foto-times-square2.png" alt=""
+            <img src="./Imagens/foto-times-square_maior.jpg" alt=""
               onClick={(event: React.MouseEvent<HTMLImageElement>) =>
                 window.open('https://github.com/httpE2Barao')}
             />
