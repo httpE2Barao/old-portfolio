@@ -21,8 +21,8 @@
     .apresentacao{
         .perfil {
             img {
-                max-width: 200px;
-                width: 50vw;
+                transform: translateY(-5%);
+                max-width: 300px;
             }
         }
     }
@@ -123,8 +123,7 @@
     .apresentacao{
         .perfil{
             img{
-                max-width: 400px;
-                max-height: 400px;
+                max-width: 60vh;
             }
         }
     }
