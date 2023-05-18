@@ -1,5 +1,5 @@
 import React from "react"
-// import { Controller } from '../../ts/src/controller'
+import { Controller } from '../../ts/controller'
 
 const Header = () => {
     return (

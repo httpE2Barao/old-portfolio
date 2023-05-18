@@ -9,6 +9,22 @@
             }
         }
     }
+    #pag1 {
+        padding-top: 20%;
+        scroll-margin-top: 50px;
+    }
+    #pag2 {
+        a {
+            padding: 0;
+        }
+    }
+    #pag4 {
+        padding: 20% 0;
+        scroll-margin-top: 20px;
+        .contatos {
+            margin-top: 30px;
+        }
+    }
 }
 
 @media screen and (max-width: 650px){
@@ -22,7 +38,7 @@
         .perfil {
             img {
                 transform: translateY(-5%);
-                max-width: 300px;
+                max-width: 200px;
             }
         }
     }

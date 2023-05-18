@@ -8,21 +8,21 @@ export class Controller {
     private botaoVoltar!: HTMLElement | null;
 
     constructor() {
-        document.addEventListener('DOMContentLoaded', () => {
+        window.onload = () => {
             this.botaoMenu = document.querySelector('[data-menu]');
-            console.log(this.botaoMenu)
+            console.log()
             this.pagMenu = document.querySelector('[data-menu-pag]');
-            console.log(this.pagMenu)
             this.botaoVoltar = document.querySelector('[data-titulo]');
-            console.log(this.botaoVoltar)
-            console.log(document.body.innerHTML)
-        });
+        };
     }
     
     public AddListeners() {
         const botao = this.botaoMenu;
+        console.log(botao);
         const menu = this.pagMenu;
+        console.log(menu);
         const botaoVoltar = this.botaoVoltar;
+        console.log(botaoVoltar);
 
         if (botao && menu && botaoVoltar) {
 
