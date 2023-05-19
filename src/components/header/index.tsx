@@ -10,17 +10,14 @@ const Header = () => {
             <header>
                 <nav className="nav">
 
-                    <div className="menu-icon" data-menu
-                        onClick={() => setOpen(!open)}>
+                    <div className="menu-icon" onClick={() => setOpen(!open)}>
                         {open ? (
                             <img src="Imagens/menu-aberto.png" />
                         ) : (
                             <img src="Imagens/menu-fechado.png" alt="Menu" />
                         )}
                     </div>
-
-                    <a href="#pag0" data-titulo
-                        onClick={() => open ? setOpen(!open) : ''}
+                    <a href="#pag0" onClick={() => open ? setOpen(!open) : ''}
                     >Portifólio</a>
                     <h2></h2>
                 </nav>
@@ -28,13 +25,13 @@ const Header = () => {
             </header>
 
             {open && (
-                <div className="menu-pag" data-menu-pag>
+                <div className="menu-pag">
                     <h2>Bem-vindo!<div className="gradientLine"></div></h2>
                     <ul className="menu-conteiner" onClick={() => setOpen(!open)}>
-                        <li className="menu-item"><a href="#pag1" data-menu-item>sobre</a></li>
-                        <li className="menu-item"><a href="#pag2" data-menu-item>habilidades</a></li>
-                        <li className="menu-item"><a href="#pag3" data-menu-item>projetos</a></li>
-                        <li className="menu-item"><a href="#pag4" data-menu-item>contato</a></li>
+                        <li className="menu-item"><a href="#pag1" >sobre</a></li>
+                        <li className="menu-item"><a href="#pag2" >habilidades</a></li>
+                        <li className="menu-item"><a href="#pag3" >projetos</a></li>
+                        <li className="menu-item"><a href="#pag4" >contato</a></li>
                     </ul>
                 </div>
             )}
