@@ -12,19 +12,22 @@ const Header = () => {
 
                     <div className="menu-icon" data-menu
                         onClick={() => setOpen(!open)}>
-                        <img src="Imagens/menu-fechado.png" alt="Menu" />
-                        <img src="Imagens/menu-aberto.png" className="hidden" />
+                        {open ? (
+                            <img src="Imagens/menu-aberto.png" />
+                        ) : (
+                            <img src="Imagens/menu-fechado.png" alt="Menu" />
+                        )}
                     </div>
 
-                    <a href="#pag0" data-titulo 
-                    onClick={() => open? setOpen(!open): ''}
-                        >Portifólio</a>
+                    <a href="#pag0" data-titulo
+                        onClick={() => open ? setOpen(!open) : ''}
+                    >Portifólio</a>
                     <h2></h2>
                 </nav>
                 <div className="gradientLine"></div>
             </header>
 
-            { open && (
+            {open && (
                 <div className="menu-pag" data-menu-pag>
                     <h2>Bem-vindo!<div className="gradientLine"></div></h2>
                     <ul className="menu-conteiner" onClick={() => setOpen(!open)}>
