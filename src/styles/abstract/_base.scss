@@ -1,0 +1,30 @@
+@import './variaveis';
+
+html {
+    background-color: $fundo;
+    font-family: $fonte;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body,
+main {
+    flex-direction: column;
+    list-style: none;
+    text-decoration: none;
+
+    a {
+        text-decoration-line: none;
+    }
+}
+
+.animate {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 1s ease-out, transform .5s ease-out;
+}
+
+.show {
+    opacity: 1;
+    transform: translateX(0);
+}

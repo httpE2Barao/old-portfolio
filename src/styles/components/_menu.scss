@@ -1,0 +1,54 @@
+.menu-pag{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    position: fixed;
+    z-index: 2;
+    
+    width: 100vw;
+    height: 90%;
+    
+    backdrop-filter: blur(20px);
+
+    text-shadow: 0 0 10px black;
+    h2 {
+        color: white;
+        font-weight: bold;
+        font-size: $tamanho-fonte;
+        div{
+            height: 6px;
+        }
+    }
+    ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 2em;
+
+        text-align: center;
+        text-decoration: none;
+
+        li {
+            height: 50px;
+            a {
+                color: white;
+
+                font-size: $tamanho-fonte / 1.2;
+                font-weight: 600;
+                
+                transition: .5s;
+                
+                &:hover {
+                    color: blueviolet;
+                    font-size: $tamanho-fonte;
+                    transition: .3s;
+                }
+                &::before {
+                    content: './';
+                }
+            }
+        }
+    }
+}

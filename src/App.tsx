@@ -23,24 +23,27 @@ function App() {
             { title: 'CSS3', src: 'Imagens/css.svg', alt: 'Cascading Style Sheets', link: 'https://developer.mozilla.org/pt-BR/docs/Web/CSS' }, 
             { title: 'JavaScript', src: 'Imagens/javascript.svg', alt: 'Linguagem de Programação', link: 'https://developer.mozilla.org/pt-BR/docs/Web/JavaScript' },
             { title: 'TypeScript', src: 'Imagens/typescript.svg', alt: 'Linguagem de Programação', link: 'https://www.typescriptlang.org/' },
+            { title: 'GitHub', src: 'Imagens/github.svg', alt: 'Versionamento de código', link: 'https://github.com/' },
             { title: 'SASS', src: 'Imagens/sass.svg', alt: 'Syntactically Awesome Style Sheets', link: 'https://sass-lang.com/' },
             { title: 'React', src: 'Imagens/react.svg', alt: 'Biblioteca de Javascript e Typescript', link: 'https://react.dev/' },
             { title: 'Figma', src: 'Imagens/figma.svg', alt: 'Editor gráfico de design', link: 'https://www.figma.com' },
             { title: 'CSS in JS', src: 'Imagens/styledcomponents.svg', alt: 'Styled-components', link: 'https://styled-components.com/' },
+            { title: 'User Experience', src: 'Imagens/uiux.svg', alt: 'User Interface / Experience', link: 'https://www.alura.com.br/artigos/ux-e-ui-conheca-as-semelhancas-e-diferencas-entre-ambos' },
+            { title: `ㅤ Amazon ㅤ Web`, src: 'Imagens/aws.svg', alt: 'Amazon Web Services', link: 'https://aws.amazon.com/pt/' },
           ]}
         />
 
         <Projetos 
           projetos={[
-            { title: 'Sincronário Maia', src: './Imagens/project_sincronario.png', link: 'https://sincronario.vercel.app/'},
-            { title: 'Video Play', src: './Imagens/project_video-play.png', link: 'https://video-play-nine.vercel.app/'},
-            { title: 'Stopwatch', src: './Imagens/project_stopwatch.png', link: 'https://stopwatch-react-app0.vercel.app/'},
-            { title: 'Número secreto', src: './Imagens/project_secret-number.png', link: 'https://jogo-numero-secreto-3425ysutw-httpe2barao.vercel.app/'},
-            { title: 'Negociações', src: './Imagens/project_negociacoes.png', link: 'https://code-study-rho.vercel.app/TypeScript/Negocia%C3%A7%C3%B5es/app/dist/index.html'},
-            { title: 'Alura Books', src: './Imagens/project_alura-books.png', link: 'https://alura-books-httpe2barao.vercel.app/'},
-            { title: 'Projeto de Login', src: './Imagens/project_login-responsivo.png', link: 'https://projeto-login-three.vercel.app/'},
-            { title: 'Moni Bank', src: './Imagens/project_moni-bank.png', link: 'https://httpe2barao.github.io/MoniBank/pages/abrir-conta-form.html'},
-            { title: 'Books', src: './Imagens/project_books-react.png', link: 'https://books-react-project-a.vercel.app/'},
+            { title: 'Sincronário Maia', src: './Imagens/project_sincronario.png', link: 'https://sincronario.vercel.app/', description: 'lorem'},
+            { title: 'Video Play', src: './Imagens/project_video-play.png', link: 'https://video-play-nine.vercel.app/', description: 'lorem'},
+            { title: 'Stopwatch', src: './Imagens/project_stopwatch.png', link: 'https://stopwatch-react-app0.vercel.app/', description: 'lorem'},
+            { title: 'Número secreto', src: './Imagens/project_secret-number.png', link: 'https://jogo-numero-secreto-3425ysutw-httpe2barao.vercel.app/', description: 'lorem'},
+            { title: 'Negociações', src: './Imagens/project_negociacoes.png', link: 'https://code-study-rho.vercel.app/TypeScript/Negocia%C3%A7%C3%B5es/app/dist/index.html', description: 'lorem'},
+            { title: 'Alura Books', src: './Imagens/project_alura-books.png', link: 'https://alura-books-httpe2barao.vercel.app/', description: 'lorem'},
+            { title: 'Projeto de Login', src: './Imagens/project_login-responsivo.png', link: 'https://projeto-login-three.vercel.app/', description: 'lorem'},
+            { title: 'Moni Bank', src: './Imagens/project_moni-bank.png', link: 'https://httpe2barao.github.io/MoniBank/pages/abrir-conta-form.html', description: 'lorem'},
+            { title: 'Books', src: './Imagens/project_books-react.png', link: 'https://books-react-project-a.vercel.app/', description: 'lorem'},
           ]}
         />
 

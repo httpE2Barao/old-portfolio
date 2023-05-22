@@ -1,0 +1,46 @@
+@import '../abstract/variaveis';
+
+#pag1{
+    height: 80vh;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    scroll-margin-top: 125px;
+
+    @include pullBack;
+    @include input-gradient;
+    label{
+        display: none;
+    }
+    #bt{
+        padding: 13px 20px;
+        width: 150px;
+    }
+    .sobreMim{
+        width: 88vw;
+        height: 60%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        .resumo{
+            display: flex;
+            flex-flow: column;
+            width: fit-content;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            p{
+                padding: 40px 0;
+                word-spacing: 3px;
+                line-height: 1.5em;
+                letter-spacing: 1px;
+                max-width: 730px;
+                color: #ffff;
+            }
+        }
+    }
+}
