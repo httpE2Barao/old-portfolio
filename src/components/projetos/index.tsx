@@ -7,7 +7,8 @@ interface projetosProps {
 interface projeto {
     title: string;
     src: string;
-    link: string;
+    website: string;
+    github: string;
     description: string;
 }
 
@@ -46,9 +47,13 @@ const Projetos = ({ projetos }: projetosProps) => {
                         <p>{projetos[open].description}</p>
                     </div>
                     <div className="description__buttons">
-                        <input type="button" id='bt' value="Acessar" />
+                        <input type="button" id='bt' value="Acessar" onClick={(event: React.MouseEvent<HTMLInputElement>) => 
+                            window.open(projetos[open].website)
+                        }/>
                         <img src="/Imagens/menu-aberto.png" alt="fechar" onClick={() => setOpen(-1)} />
-                        <input type="button" id='bt' value="Ver código" />
+                        <input type="button" id='bt' value="Ver código" onClick={(event: React.MouseEvent<HTMLInputElement>) => 
+                            window.open(projetos[open].github)
+                        }/>
                     </div>
                 </article>
             )}
