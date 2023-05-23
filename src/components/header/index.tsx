@@ -12,9 +12,9 @@ const Header = () => {
 
                     <div className="menu-icon" onClick={() => setOpen(!open)}>
                         {open ? (
-                            <img src="Imagens/menu-aberto.png" />
+                            <img src="Imagens/menu-aberto.png" alt="Fechar menu"/>
                         ) : (
-                            <img src="Imagens/menu-fechado.png" alt="Menu" />
+                            <img src="Imagens/menu-fechado.png" alt="Abrir menu" />
                         )}
                     </div>
                     <a href="#pag0" onClick={() => open ? setOpen(!open) : ''}

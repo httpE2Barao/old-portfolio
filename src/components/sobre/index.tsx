@@ -20,7 +20,7 @@ const Sobre = () => {
               mundo.
             </p>
             <label htmlFor="bt">Download CV</label>
-            <a href="/cv-eliasbarao.pdf" download id="bt">Download CV</a>
+            <a href="/cv-eliasbarao.pdf" download className="bt">Download CV</a>
           </div>
         </section>
       </article>

@@ -36,7 +36,7 @@ function App() {
         <Projetos 
           projetos={[
             { title: 'Sincronário Maia', src: './Imagens/project_sincronario.png', website: 'https://sincronario.vercel.app/', github: 'https://github.com/httpE2Barao/Sincronario', description: 'lorem'},
-            { title: 'Video Play', src: './Imagens/project_video-play.png', website: 'https://video-play-nine.vercel.app/', github: 'https://github.com/httpE2Barao/VideoPlay', description: 'lorem'},
+            { title: 'Video Play', src: './Imagens/project_video-play.png', website: 'https://video-play-nine.vercel.app/', github: 'https://github.com/httpE2Barao/VideoPlay', description: 'Neste projeto, eu utilizei CSS avançado e Javascript avançado para criar uma interface dinâmica e responsiva. Com o CSS, eu apliquei Flex Box e Grid layout para organizar os elementos da página de forma flexível e adaptável. Com o Javascript, eu usei Fetch API e Async Functions para fazer requisições assíncronas a uma API externa e manipular os dados recebidos.'},
             { title: 'Stopwatch', src: './Imagens/project_stopwatch.png', website: 'https://stopwatch-react-app0.vercel.app/', github: 'https://github.com/httpE2Barao/Stopwatch-react-app', description: 'lorem'},
             { title: 'Número secreto', src: './Imagens/project_secret-number.png', website: 'https://jogo-numero-secreto-3425ysutw-httpe2barao.vercel.app/', github: 'https://github.com/httpE2Barao/Numero-secreto', description: 'lorem'},
             { title: 'Negociações', src: './Imagens/project_negociacoes.png', website: 'https://code-study-rho.vercel.app/TypeScript/Negocia%C3%A7%C3%B5es/app/dist/index.html', github: 'https://github.com/httpE2Barao/Code-study/tree/main/TypeScript/Negocia%C3%A7%C3%B5es', description: 'lorem'},

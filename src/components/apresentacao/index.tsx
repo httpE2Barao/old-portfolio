@@ -13,7 +13,7 @@ const Apresentacao = () => {
             <p className="typing">Desenvolvedor Web</p>
             <input
               type="button"
-              id="bt"
+              className="bt"
               value="Entrar em contato"
               onClick={(event: React.MouseEvent<HTMLInputElement>) =>
                 window.open("mailto:e2barao@hotmail.com")

@@ -39,7 +39,7 @@
 }
 
 @mixin input-gradient {
-    #bt {
+    .bt {
         @include fundo-gradient;
         color: #ffff;
         width: 200px;
@@ -68,7 +68,7 @@
 }
 
 @mixin titulo-gradient {
-    width: fit-content;
+    width: auto;
     padding: 10px 30px;
     margin: 15px 0 25px;
 

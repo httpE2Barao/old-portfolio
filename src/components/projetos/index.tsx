@@ -34,7 +34,7 @@ const Projetos = ({ projetos }: projetosProps) => {
                 })}
             </ul>
             <label htmlFor="bt">Repositório</label>
-            <input type="button" id="bt" value="Repositório" src="#"
+            <input type="button" className="bt" value="Repositório" src="#"
                 onClick={(event: React.MouseEvent<HTMLInputElement>) =>
                     window.open('https://code-study-rho.vercel.app/')}
                     />
@@ -47,11 +47,11 @@ const Projetos = ({ projetos }: projetosProps) => {
                         <p>{projetos[open].description}</p>
                     </div>
                     <div className="description__buttons">
-                        <input type="button" id='bt' value="Acessar" onClick={(event: React.MouseEvent<HTMLInputElement>) => 
+                        <input type="button" className='bt' value="Acessar" onClick={(event: React.MouseEvent<HTMLInputElement>) => 
                             window.open(projetos[open].website)
                         }/>
                         <img src="/Imagens/menu-aberto.png" alt="fechar" onClick={() => setOpen(-1)} />
-                        <input type="button" id='bt' value="Ver código" onClick={(event: React.MouseEvent<HTMLInputElement>) => 
+                        <input type="button" className='bt' value="Ver código" onClick={(event: React.MouseEvent<HTMLInputElement>) => 
                             window.open(projetos[open].github)
                         }/>
                     </div>

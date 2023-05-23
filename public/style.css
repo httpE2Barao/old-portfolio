@@ -227,11 +227,11 @@ header nav .menu-icon .hidden {
 .apresentacao .intro label {
   display: none;
 }
-.apresentacao .intro #bt:hover {
+.apresentacao .intro .bt:hover {
   color: black;
   background-color: white;
 }
-.apresentacao .intro #bt {
+.apresentacao .intro .bt {
   background: linear-gradient(to right, #DF5025, #3B05EF, #c99300);
   background-size: 400% 100%;
   animation: background 7s infinite alternate ease-in-out;
@@ -246,7 +246,7 @@ header nav .menu-icon .hidden {
   box-shadow: 0px 3px 4px rgba(39, 39, 39, 0.6509803922);
   transition: transform 0.3s, box-shadow 0.2s;
 }
-.apresentacao .intro #bt:hover {
+.apresentacao .intro .bt:hover {
   cursor: pointer;
   background-color: white;
   color: #000000;
@@ -296,8 +296,7 @@ header nav .menu-icon .hidden {
   color: white;
   position: relative;
   left: -5px;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: auto;
   padding: 10px 30px;
   margin: 15px 0 25px;
   font-size: 3rem;
@@ -369,8 +368,7 @@ header nav .menu-icon .hidden {
   color: white;
   position: relative;
   left: -5px;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: auto;
   padding: 10px 30px;
   margin: 15px 0 25px;
   font-size: 3rem;
@@ -388,7 +386,7 @@ header nav .menu-icon .hidden {
   color: black;
   margin-top: 30px;
 }
-#pag3 #bt {
+#pag3 .bt {
   background: linear-gradient(to right, #DF5025, #3B05EF, #c99300);
   background-size: 400% 100%;
   animation: background 7s infinite alternate ease-in-out;
@@ -403,7 +401,7 @@ header nav .menu-icon .hidden {
   box-shadow: 0px 3px 4px rgba(39, 39, 39, 0.6509803922);
   transition: transform 0.3s, box-shadow 0.2s;
 }
-#pag3 #bt:hover {
+#pag3 .bt:hover {
   cursor: pointer;
   background-color: white;
   color: #000000;
@@ -470,10 +468,9 @@ header nav .menu-icon .hidden {
 }
 .description .projeto__title {
   font-size: 3.5vw;
-  background-color: rgba(255, 255, 255, 0.419);
-  color: #000;
-  width: -moz-fit-content;
-  width: fit-content;
+  text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.773);
+  color: #fff;
+  width: auto;
   padding: 0.5em;
   border-radius: 15px;
   margin-bottom: 20px;
@@ -489,6 +486,11 @@ header nav .menu-icon .hidden {
   display: flex;
   gap: 50px;
   justify-content: space-between;
+}
+.description .description__flex p {
+  font-weight: 500;
+  max-width: 30vw;
+  line-height: 1.5em;
 }
 .description .description__buttons {
   display: flex;
@@ -507,7 +509,7 @@ header nav .menu-icon .hidden {
   background-color: #8257E6;
   cursor: pointer;
 }
-.description .description__buttons #bt {
+.description .description__buttons .bt {
   background: linear-gradient(to right, #DF5025, #3B05EF, #c99300);
   background-size: 400% 100%;
   animation: background 7s infinite alternate ease-in-out;
@@ -522,7 +524,7 @@ header nav .menu-icon .hidden {
   box-shadow: 0px 3px 4px rgba(39, 39, 39, 0.6509803922);
   transition: transform 0.3s, box-shadow 0.2s;
 }
-.description .description__buttons #bt:hover {
+.description .description__buttons .bt:hover {
   cursor: pointer;
   background-color: white;
   color: #000000;
@@ -555,8 +557,7 @@ header nav .menu-icon .hidden {
   color: white;
   position: relative;
   left: -5px;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: auto;
   padding: 10px 30px;
   margin: 15px 0 25px;
   font-size: 3rem;
@@ -567,7 +568,7 @@ header nav .menu-icon .hidden {
 #pag1 a h1::before {
   content: "./";
 }
-#pag1 #bt {
+#pag1 .bt {
   background: linear-gradient(to right, #DF5025, #3B05EF, #c99300);
   background-size: 400% 100%;
   animation: background 7s infinite alternate ease-in-out;
@@ -582,7 +583,7 @@ header nav .menu-icon .hidden {
   box-shadow: 0px 3px 4px rgba(39, 39, 39, 0.6509803922);
   transition: transform 0.3s, box-shadow 0.2s;
 }
-#pag1 #bt:hover {
+#pag1 .bt:hover {
   cursor: pointer;
   background-color: white;
   color: #000000;
@@ -649,8 +650,7 @@ header nav .menu-icon .hidden {
   color: white;
   position: relative;
   left: -5px;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: auto;
   padding: 10px 30px;
   margin: 15px 0 25px;
   font-size: 3rem;
