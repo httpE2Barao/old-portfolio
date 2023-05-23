@@ -70,6 +70,7 @@
     height: 100vh;
 
     backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     img {
         width: 400px;
         border-radius: 10px;
@@ -93,8 +94,10 @@
         padding: 2em;
         display: flex;
         gap: 50px;
+        align-items: center;
         justify-content: space-between;
         p {
+            font-size: $tamanho-relativo-fonte * 0.18;
             font-weight: 500;
             max-width: 30vw;
             line-height: 1.5em;

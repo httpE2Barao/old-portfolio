@@ -459,8 +459,8 @@ header nav .menu-icon .hidden {
   top: 0;
   width: 100vw;
   height: 100vh;
+  backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
 }
 .description img {
   width: 400px;
@@ -485,9 +485,11 @@ header nav .menu-icon .hidden {
   padding: 2em;
   display: flex;
   gap: 50px;
+  align-items: center;
   justify-content: space-between;
 }
 .description .description__flex p {
+  font-size: 1.26vw;
   font-weight: 500;
   max-width: 30vw;
   line-height: 1.5em;
