@@ -11,7 +11,7 @@ header {
     z-index: 2;
     top: 0;
     position: sticky;
-
+    position: -webkit-sticky;
     a {
         color: white;
         font-size: $tamanho-fonte / 2;
