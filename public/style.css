@@ -352,8 +352,8 @@ header nav .menu-icon .hidden {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  scroll-snap-margin-top: 100px;
   scroll-margin-top: 100px;
+  scroll-snap-margin-top: 100px;
 }
 #pag3 .gradientLine {
   height: 6px;
