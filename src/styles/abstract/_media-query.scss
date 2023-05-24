@@ -4,37 +4,49 @@
             h1 {
                 font-size: 8.5vw;
             }
+
             p {
                 font-size: 5vw;
             }
         }
     }
+
     #pag1 {
         padding-top: 20%;
         scroll-margin-top: 50px;
     }
+
     #pag2 {
         a {
             padding: 0;
         }
     }
+
     #pag4 {
         padding: 20% 0;
         scroll-margin-top: 20px;
+
         .contatos {
             margin-top: 30px;
         }
     }
+
+    .description {
+        height: 100%;
+        width: 100%;
+    }
 }
 
-@media screen and (max-width: 650px){
-    a{
+@media screen and (max-width: 650px) {
+    a {
         font-size: $tamanho-relativo-fonte / 1.5;
     }
-    p{
+
+    p {
         font-size: $tamanho-relativo-fonte / 2.5;
     }
-    .apresentacao{
+
+    .apresentacao {
         .perfil {
             img {
                 transform: translateY(-5%);
@@ -42,43 +54,52 @@
             }
         }
     }
-    .title{
+
+    .title {
         font-size: $tamanho-relativo-fonte;
     }
-    .projetos{
-        h2{
+
+    .projetos {
+        h2 {
             font-size: $tamanho-relativo-fonte / 1.8;
         }
     }
-    .formulario{
-        label{
+
+    .formulario {
+        label {
             font-size: $tamanho-relativo-fonte / 1.5;
         }
-        #email, textarea{
+
+        #email,
+        textarea {
             font-size: $tamanho-relativo-fonte / 2;
         }
     }
-    .footerconteiner{
-        h2{
+
+    .footerconteiner {
+        h2 {
             font-size: $tamanho-relativo-fonte / 1.2;
         }
-        li{
+
+        li {
             font-size: $tamanho-relativo-fonte / 1.7;
-            a{
+
+            a {
                 font-size: $tamanho-relativo-fonte / 1.7;
             }
         }
     }
 }
 
-@media screen and (min-width: 650px){
-    .apresentacao{
-        .intro{
+@media screen and (min-width: 650px) {
+    .apresentacao {
+        .intro {
             align-items: flex-start;
             text-align: left;
         }
-        .perfil{
-            img{
+
+        .perfil {
+            img {
                 position: relative;
                 top: -5px;
                 max-width: 45vw;
@@ -86,65 +107,117 @@
             }
         }
     }
-    .projetos{
-        h2{
+
+    .projetos {
+        h2 {
             font-size: $tamanho-fonte / 2;
         }
     }
-    .formulario{
-        label{
+
+    .formulario {
+        label {
             font-size: $tamanho-fonte / 2;
         }
-        #email, textarea{
+
+        #email,
+        textarea {
             font-size: $tamanho-fonte / 2.5;
         }
     }
-    .footerconteiner{
-        h2{
+
+    .footerconteiner {
+        h2 {
             font-size: $tamanho-fonte / 1.5;
         }
-        li{
+
+        li {
             font-size: $tamanho-fonte / 2.5;
+        }
+    }
+
+}
+
+@media screen and (max-width: 720px){
+    .description {
+        .projeto__title {
+            font-size: 5vw;
+            margin-bottom: 0;
+        }
+        .description__flex {
+            width: 80vw;
+            justify-content: space-around;
+            gap: 17px;
+            padding: 1em;
+            height: 60vh;
+            flex-flow: column nowrap;
+            p {
+                text-align: center;
+                height: 40vh;
+                padding: 0 5vw;
+                max-width: 90%;
+                font-size: $tamanho-fonte * .25;
+            }
+            img {
+                width: 70%;
+            }
+        }
+        .description__buttons {
+            .bt {
+                width: auto;
+                height: 40px;
+                font-size: $tamanho-relativo-fonte * .3;
+            }
+            img {
+                height: 25px;
+                width: 25px;
+            }
         }
     }
 }
 
-@media screen and (max-width: 990px){
-    #pag1{
-        .sobreMim{
+@media screen and (max-width: 990px) {
+    #pag1 {
+        .sobreMim {
             flex-direction: column;
             padding: 0;
             align-items: center;
-            .perfil{
+
+            .perfil {
                 margin: 0 50px 30px 50px;
                 position: relative;
                 right: 10px;
             }
-            .resumo{
+
+            .resumo {
                 flex-direction: column;
                 align-items: center;
                 text-align: center;
-                h2{
+
+                h2 {
                     padding: 20px 0;
                 }
             }
         }
     }
-    #pag2{
+
+    #pag2 {
         margin-bottom: 100px;
     }
-} 
 
-@media screen and (min-width: 900px){
-    .apresentacao{
-        .perfil{
-            img{
+}
+
+@media screen and (min-width: 900px) {
+    .apresentacao {
+        .perfil {
+            img {
                 max-width: 60vh;
             }
         }
     }
-    #pag2{
+
+    #pag2 {
         margin-bottom: 150px;
+
         .skills {
             width: 60%;
         }

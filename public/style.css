@@ -724,6 +724,10 @@ header nav .menu-icon .hidden {
   #pag4 .contatos {
     margin-top: 30px;
   }
+  .description {
+    height: 100%;
+    width: 100%;
+  }
 }
 @media screen and (max-width: 650px) {
   a {
@@ -745,7 +749,8 @@ header nav .menu-icon .hidden {
   .formulario label {
     font-size: 4.6666666667vw;
   }
-  .formulario #email, .formulario textarea {
+  .formulario #email,
+  .formulario textarea {
     font-size: 3.5vw;
   }
   .footerconteiner h2 {
@@ -775,7 +780,8 @@ header nav .menu-icon .hidden {
   .formulario label {
     font-size: 1.5rem;
   }
-  .formulario #email, .formulario textarea {
+  .formulario #email,
+  .formulario textarea {
     font-size: 1.2rem;
   }
   .footerconteiner h2 {
@@ -783,6 +789,39 @@ header nav .menu-icon .hidden {
   }
   .footerconteiner li {
     font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 720px) {
+  .description .projeto__title {
+    font-size: 5vw;
+    margin-bottom: 0;
+  }
+  .description .description__flex {
+    width: 80vw;
+    justify-content: space-around;
+    gap: 17px;
+    padding: 1em;
+    height: 60vh;
+    flex-flow: column nowrap;
+  }
+  .description .description__flex p {
+    text-align: center;
+    height: 40vh;
+    padding: 0 5vw;
+    max-width: 90%;
+    font-size: 0.75rem;
+  }
+  .description .description__flex img {
+    width: 70%;
+  }
+  .description .description__buttons .bt {
+    width: auto;
+    height: 40px;
+    font-size: 2.1vw;
+  }
+  .description .description__buttons img {
+    height: 25px;
+    width: 25px;
   }
 }
 @media screen and (max-width: 990px) {
