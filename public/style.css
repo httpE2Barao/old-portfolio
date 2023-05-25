@@ -544,7 +544,7 @@ header nav .menu-icon .hidden {
   display: flex;
   flex-direction: column;
   align-items: center;
-  scroll-margin-top: 125px;
+  scroll-margin-top: 110px;
 }
 #pag1 .gradientLine {
   height: 6px;
@@ -824,6 +824,9 @@ header nav .menu-icon .hidden {
   }
 }
 @media screen and (max-width: 990px) {
+  #pag1 {
+    margin-top: 30px;
+  }
   #pag1 .sobreMim {
     flex-direction: column;
     padding: 0;
