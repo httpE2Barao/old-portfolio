@@ -16,14 +16,12 @@ main a {
   text-decoration-line: none;
 }
 
-.App {
+.Main {
   display: flex;
   flex-flow: column nowrap;
-  gap: 100px;
-}
-.App #pag0, .App #pag1, .App #pag2, .App #pag3, .App #pag4 {
   position: relative;
-  top: -100px;
+  top: -71px;
+  gap: 100px;
 }
 
 .animate {
@@ -108,7 +106,7 @@ header nav .menu-icon .hidden {
   flex-flow: column;
   align-items: center;
   justify-content: space-evenly;
-  transform: translateY(70px);
+  transform: translateY(-1px);
   position: fixed;
   z-index: 2;
   width: 100vw;
@@ -728,14 +726,12 @@ main a {
   text-decoration-line: none;
 }
 
-.App {
+.Main {
   display: flex;
   flex-flow: column nowrap;
-  gap: 100px;
-}
-.App #pag0, .App #pag1, .App #pag2, .App #pag3, .App #pag4 {
   position: relative;
-  top: -100px;
+  top: -71px;
+  gap: 100px;
 }
 
 .animate {

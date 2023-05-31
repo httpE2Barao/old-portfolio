@@ -13,6 +13,8 @@ function App() {
       <div className="App">
 
         <Header />
+        
+        <div className="Main">
 
         <Apresentacao />
 
@@ -33,7 +35,7 @@ function App() {
             { title: 'Web Design', src: 'Imagens/uiux.svg', alt: 'User Interface / Experience', link: 'https://www.alura.com.br/artigos/ux-e-ui-conheca-as-semelhancas-e-diferencas-entre-ambos' },
             { title: `ㅤ Amazon ㅤ Web`, src: 'Imagens/aws.svg', alt: 'Amazon Web Services', link: 'https://aws.amazon.com/pt/' },
           ]}
-        />
+          />
 
         <Projetos 
           projetos={[
@@ -47,17 +49,17 @@ function App() {
             { title: 'Moni Bank', src: './Imagens/project_moni-bank.png', website: 'https://httpe2barao.github.io/MoniBank/pages/abrir-conta-form.html', github: 'https://github.com/httpE2Barao/MoniBank', description: 'O projeto usa Javascript para criar uma conta em um site de banco. Ele tem boas práticas de validação de formulários, como verificar se o usuário é maior de idade, se o CPF tem os dígitos válidos e com a funcionalidade de tirar foto pelo webcam. Ele também trata os erros que podem ocorrer com dados inválidos. O projeto é simples, mas mostra como usar a lógica de programação para fazer uma aplicação web de cadastro.'},
             { title: 'Projeto de Login', src: './Imagens/project_login-responsivo.png', website: 'https://projeto-login-three.vercel.app/', github: 'https://github.com/httpE2Barao/Projeto-login', description: 'Neste projeto, eu usei UI (User Interface) para criar uma interface simples e intuitiva para um site de login. Eu usei CSS adaptativo com media queries para ajustar o layout de acordo com o tamanho da tela do usuário. Eu também usei Javascript para fazer uma validação de usuário e senha simples, verificando se os campos estão preenchidos e se correspondem aos dados armazenados localmete. PS: o usuário e a senha é "admin"'},
           ]}
-        />
+          />
 
         <Contatos
           contatos={[
-          { title: 'LinkedIn', src: './Imagens/linkedin.svg', info: '@e2barao',  link: 'https://www.linkedin.com/in/e2barao/'},
-          { title: 'GitHub', src: './Imagens/github.svg', info: '@httpE2Barao',  link: 'https://www.github.com/httpE2Barao'},
-          { title: 'WhatsApp', src: './Imagens/phone.svg', info: '(41) 99804-6755',  link: 'https://api.whatsapp.com/send?phone=551998046755'},
-          { title: 'E-mail', src: './Imagens/mail.svg', info: 'e2barao@hotmail.com',  link: 'mailto:e2barao@hotmail.com'},
+            { title: 'LinkedIn', src: './Imagens/linkedin.svg', info: '@e2barao',  link: 'https://www.linkedin.com/in/e2barao/'},
+            { title: 'GitHub', src: './Imagens/github.svg', info: '@httpE2Barao',  link: 'https://www.github.com/httpE2Barao'},
+            { title: 'WhatsApp', src: './Imagens/phone.svg', info: '(41) 99804-6755',  link: 'https://api.whatsapp.com/send?phone=551998046755'},
+            { title: 'E-mail', src: './Imagens/mail.svg', info: 'e2barao@hotmail.com',  link: 'mailto:e2barao@hotmail.com'},
           ]}
         />
-
+          </div>
       </div>
     )
 }
