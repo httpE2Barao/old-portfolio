@@ -245,7 +245,6 @@ header nav .menu-icon .hidden {
   background-size: 400% 100%;
   animation: background 7s infinite alternate ease-in-out;
   color: white;
-  width: 200px;
   padding: 10px 20px;
   border: none;
   border-radius: 30px;
@@ -401,7 +400,6 @@ header nav .menu-icon .hidden {
   background-size: 400% 100%;
   animation: background 7s infinite alternate ease-in-out;
   color: white;
-  width: 200px;
   padding: 10px 20px;
   border: none;
   border-radius: 30px;
@@ -526,7 +524,6 @@ header nav .menu-icon .hidden {
   background-size: 400% 100%;
   animation: background 7s infinite alternate ease-in-out;
   color: white;
-  width: 200px;
   padding: 10px 20px;
   border: none;
   border-radius: 30px;
@@ -584,7 +581,6 @@ header nav .menu-icon .hidden {
   background-size: 400% 100%;
   animation: background 7s infinite alternate ease-in-out;
   color: white;
-  width: 200px;
   padding: 10px 20px;
   border: none;
   border-radius: 30px;
@@ -783,10 +779,14 @@ main a {
     max-width: 200px;
   }
   .title {
-    font-size: 7vw;
+    font-size: 10.5vw;
+  }
+  #pag1 .sobreMim .resumo p {
+    font-size: 4.1176470588vw;
+    max-width: 100%;
   }
   .projetos h2 {
-    font-size: 3.8888888889vw;
+    font-size: 4.6666666667vw;
   }
   .footerconteiner h2 {
     font-size: 5.8333333333vw;

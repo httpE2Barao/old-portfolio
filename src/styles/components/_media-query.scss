@@ -58,12 +58,17 @@
     }
 
     .title {
-        font-size: $tamanho-relativo-fonte;
+        font-size: $tamanho-relativo-fonte * 1.5;
+    }
+
+    #pag1 .sobreMim .resumo p { 
+        font-size: $tamanho-relativo-fonte / 1.7;
+        max-width: 100%;
     }
 
     .projetos {
         h2 {
-            font-size: $tamanho-relativo-fonte / 1.8;
+            font-size: $tamanho-relativo-fonte / 1.5;
         }
     }
 
