@@ -844,10 +844,15 @@ main a {
   }
 }
 @media screen and (min-width: 650px) and (max-width: 720px) {
-  .description .projeto__title {
+  .projeto__title {
     font-size: 5vw;
     margin-bottom: 0;
   }
+  .description__buttons .bt {
+    font-size: 2.45vw;
+  }
+}
+@media screen and (max-width: 720px) {
   .description .description__flex {
     width: 80vw;
     justify-content: space-around;
@@ -868,7 +873,6 @@ main a {
   .description .description__buttons .bt {
     width: auto;
     height: 40px;
-    font-size: 2.45vw;
   }
   .description .description__buttons img {
     height: 25px;
