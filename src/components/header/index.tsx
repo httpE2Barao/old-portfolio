@@ -31,7 +31,7 @@ const Header = () => {
                         <li className="menu-item"><a href="#pag1" >sobre</a></li>
                         <li className="menu-item"><a href="#pag2" >habilidades</a></li>
                         <li className="menu-item"><a href="#pag3" >projetos</a></li>
-                        <li className="menu-item"><a href="#pag4" >contato</a></li>
+                        <li className="menu-item"><a href="#pag4" >contatos</a></li>
                     </ul>
                 </div>
             )}
