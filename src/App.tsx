@@ -30,6 +30,7 @@ function App() {
             { title: 'CSS in JS', src: 'Imagens/styledcomponents.svg', alt: 'Styled-components', link: 'https://styled-components.com/' },
             { title: 'User Experience', src: 'Imagens/uiux.svg', alt: 'User Interface / Experience', link: 'https://www.alura.com.br/artigos/ux-e-ui-conheca-as-semelhancas-e-diferencas-entre-ambos' },
             { title: `ㅤ Amazon ㅤ Web`, src: 'Imagens/aws.svg', alt: 'Amazon Web Services', link: 'https://aws.amazon.com/pt/' },
+            { title: `Photoshop`, src: 'Imagens/photoshop.svg', alt: 'Editor de Imagem da abode', link: 'https://www.adobe.com/products/photoshop.html' },
           ]}
         />
 
