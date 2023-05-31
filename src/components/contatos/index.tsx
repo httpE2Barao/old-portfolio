@@ -16,7 +16,7 @@ const Contatos: React.FC<ContatosProps> = ({ contatos }) => {
         <>
             <article id="pag4" className="animate">
                 <a href="#pag4">
-                    <h1 className="title">Contato</h1>
+                    <h1 className="title">Contatos</h1>
                     <div className="gradientLine"></div>
                 </a>
                 <section className="contatos">
