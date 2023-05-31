@@ -16,6 +16,16 @@ main a {
   text-decoration-line: none;
 }
 
+.App {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 100px;
+}
+.App #pag0, .App #pag1, .App #pag2, .App #pag3, .App #pag4 {
+  position: relative;
+  top: -100px;
+}
+
 .animate {
   opacity: 0;
   transform: translateX(-50px);
@@ -55,7 +65,7 @@ main a {
 header {
   background-color: #13131F;
   height: 100%;
-  z-index: 2;
+  z-index: 3;
   top: 0;
   position: sticky;
   position: -webkit-sticky;
@@ -98,6 +108,7 @@ header nav .menu-icon .hidden {
   flex-flow: column;
   align-items: center;
   justify-content: space-evenly;
+  transform: translateY(70px);
   position: fixed;
   z-index: 2;
   width: 100vw;
@@ -143,7 +154,6 @@ header nav .menu-icon .hidden {
 #pag0 {
   height: 89vh;
   position: relative;
-  top: -71px;
 }
 
 .home {
@@ -539,7 +549,6 @@ header nav .menu-icon .hidden {
 }
 
 #pag1 {
-  height: 80vh;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -605,7 +614,6 @@ header nav .menu-icon .hidden {
 }
 #pag1 .sobreMim {
   width: 88vw;
-  height: 60%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -622,11 +630,11 @@ header nav .menu-icon .hidden {
   justify-content: center;
 }
 #pag1 .sobreMim .resumo p {
-  padding: 40px 0;
+  padding: 20px 0 40px;
   word-spacing: 3px;
   line-height: 1.5em;
   letter-spacing: 1px;
-  max-width: 730px;
+  max-width: 80%;
   color: white;
 }
 
@@ -634,7 +642,7 @@ header nav .menu-icon .hidden {
   height: 100vh;
   scroll-snap-margin-top: 130px;
   scroll-margin-top: 130px;
-  margin: 100px 10vw;
+  margin: 0 10vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -671,7 +679,6 @@ header nav .menu-icon .hidden {
   flex-flow: row wrap;
   justify-content: center;
   margin-top: 75px;
-  padding-bottom: 100px;
   gap: 75px;
 }
 #pag4 .contatos .contato {
@@ -701,6 +708,45 @@ header nav .menu-icon .hidden {
   cursor: pointer;
   transform: scale(1.15);
   transition: transform 0.3s;
+}
+
+html {
+  background-color: #13131F;
+  font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body,
+main {
+  flex-direction: column;
+  list-style: none;
+  text-decoration: none;
+}
+body a,
+main a {
+  text-decoration-line: none;
+}
+
+.App {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 100px;
+}
+.App #pag0, .App #pag1, .App #pag2, .App #pag3, .App #pag4 {
+  position: relative;
+  top: -100px;
+}
+
+.animate {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 1s ease-out, transform 0.5s ease-out;
+}
+
+.show {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 @media screen and (max-width: 490px) {
@@ -746,13 +792,6 @@ header nav .menu-icon .hidden {
   .projetos h2 {
     font-size: 3.8888888889vw;
   }
-  .formulario label {
-    font-size: 4.6666666667vw;
-  }
-  .formulario #email,
-  .formulario textarea {
-    font-size: 3.5vw;
-  }
   .footerconteiner h2 {
     font-size: 5.8333333333vw;
   }
@@ -776,13 +815,6 @@ header nav .menu-icon .hidden {
   }
   .projetos h2 {
     font-size: 1.5rem;
-  }
-  .formulario label {
-    font-size: 1.5rem;
-  }
-  .formulario #email,
-  .formulario textarea {
-    font-size: 1.2rem;
   }
   .footerconteiner h2 {
     font-size: 2rem;
@@ -823,10 +855,7 @@ header nav .menu-icon .hidden {
     width: 25px;
   }
 }
-@media screen and (max-width: 990px) {
-  #pag1 {
-    margin-top: 30px;
-  }
+@media screen and (min-width: 720px) and (max-width: 990px) {
   #pag1 .sobreMim {
     flex-direction: column;
     padding: 0;
@@ -845,18 +874,12 @@ header nav .menu-icon .hidden {
   #pag1 .sobreMim .resumo h2 {
     padding: 20px 0;
   }
-  #pag2 {
-    margin-bottom: 100px;
-  }
 }
 @media screen and (min-width: 900px) {
   .apresentacao .perfil img {
     max-width: 60vh;
   }
-  #pag2 {
-    margin-bottom: 150px;
-  }
   #pag2 .skills {
-    width: 60%;
+    width: 70%;
   }
 }/*# sourceMappingURL=style.css.map */

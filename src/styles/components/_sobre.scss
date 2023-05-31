@@ -1,7 +1,6 @@
 @import '../abstract/variaveis';
 
 #pag1{
-    height: 80vh;
     margin: 0 auto;
 
     display: flex;
@@ -20,7 +19,6 @@
     }
     .sobreMim{
         width: 88vw;
-        height: 60%;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -34,11 +32,11 @@
             text-align: center;
             justify-content: center;
             p{
-                padding: 40px 0;
+                padding: 20px 0 40px;
                 word-spacing: 3px;
                 line-height: 1.5em;
                 letter-spacing: 1px;
-                max-width: 730px;
+                max-width: 80%;
                 color: #ffff;
             }
         }

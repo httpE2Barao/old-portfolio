@@ -1,3 +1,5 @@
+@import '../abstract/base';
+
 @media screen and (max-width: 490px) {
     .apresentacao {
         .intro {
@@ -65,17 +67,6 @@
         }
     }
 
-    .formulario {
-        label {
-            font-size: $tamanho-relativo-fonte / 1.5;
-        }
-
-        #email,
-        textarea {
-            font-size: $tamanho-relativo-fonte / 2;
-        }
-    }
-
     .footerconteiner {
         h2 {
             font-size: $tamanho-relativo-fonte / 1.2;
@@ -114,17 +105,6 @@
         }
     }
 
-    .formulario {
-        label {
-            font-size: $tamanho-fonte / 2;
-        }
-
-        #email,
-        textarea {
-            font-size: $tamanho-fonte / 2.5;
-        }
-    }
-
     .footerconteiner {
         h2 {
             font-size: $tamanho-fonte / 1.5;
@@ -136,8 +116,7 @@
     }
 
 }
-
-@media screen and (max-width: 720px){
+@media screen and (max-width: 720px) {
     .description {
         .projeto__title {
             font-size: 5vw;
@@ -174,9 +153,8 @@
     }
 }
 
-@media screen and (max-width: 990px) {
+@media screen and (min-width: 720px) and (max-width: 990px) {
     #pag1 {
-        margin-top: 30px;
         .sobreMim {
             flex-direction: column;
             padding: 0;
@@ -200,9 +178,6 @@
         }
     }
 
-    #pag2 {
-        margin-bottom: 100px;
-    }
 
 }
 
@@ -216,7 +191,6 @@
     }
 
     #pag2 {
-        margin-bottom: 150px;
 
         .skills {
             width: 70%;

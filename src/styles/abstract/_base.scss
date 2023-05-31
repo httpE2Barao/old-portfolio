@@ -18,6 +18,16 @@ main {
     }
 }
 
+.App {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 100px;
+    #pag0, #pag1, #pag2, #pag3, #pag4 {
+        position: relative;
+        top: -100px;
+    }
+}
+
 .animate {
     opacity: 0;
     transform: translateX(-50px);
