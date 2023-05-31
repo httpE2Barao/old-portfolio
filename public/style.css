@@ -806,6 +806,12 @@ main a {
   .projetos h2 {
     font-size: 7vw;
   }
+  .description .projeto__title {
+    font-size: 8vw;
+  }
+  .description .description__buttons .bt {
+    font-size: 3.5vw;
+  }
   .footerconteiner h2 {
     font-size: 5.8333333333vw;
   }

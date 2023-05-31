@@ -93,6 +93,13 @@
         }
     }
 
+    .description .projeto__title {
+        font-size: 8vw;
+    }
+    .description .description__buttons .bt {
+        font-size: 3.5vw;
+    }
+
     .footerconteiner {
         h2 {
             font-size: $tamanho-relativo-fonte / 1.2;
