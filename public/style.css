@@ -288,6 +288,7 @@ header nav .menu-icon .hidden {
   align-items: center;
   text-align: center;
   scroll-margin-top: 100px;
+  scroll-snap-margin-top: 100px;
 }
 #pag2 .gradientLine {
   height: 6px;
@@ -422,6 +423,7 @@ header nav .menu-icon .hidden {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 25px;
 }
 #pag3 .projetos .projeto {
   height: -moz-fit-content;
@@ -431,7 +433,6 @@ header nav .menu-icon .hidden {
   align-items: center;
   background-color: #212121;
   padding: 0 20px 20px;
-  margin: 5px 30px 30px;
   border-radius: 15px;
   box-shadow: 0px 0px 10px rgba(39, 39, 39, 0.6509803922);
   transition: transform 0.3s;
@@ -633,7 +634,6 @@ header nav .menu-icon .hidden {
 }
 
 #pag4 {
-  height: 100vh;
   scroll-snap-margin-top: 130px;
   scroll-margin-top: 130px;
   margin: 0 10vw;
@@ -760,7 +760,7 @@ main a {
     scroll-margin-top: 20px;
   }
   #pag4 .contatos {
-    margin-top: 30px;
+    margin: 30px 0;
   }
   .description {
     height: 100%;
@@ -781,12 +781,30 @@ main a {
   .title {
     font-size: 10.5vw;
   }
+  #pag1 {
+    scroll-margin-top: 15px;
+  }
+  #pag2 {
+    scroll-margin-top: 90px;
+  }
+  #pag3 {
+    scroll-margin-top: 70px;
+  }
+  #pag1 a, #pag2 a, #pag3 a {
+    margin: 15px 0;
+  }
   #pag1 .sobreMim .resumo p {
     font-size: 4.1176470588vw;
     max-width: 100%;
   }
+  .skills {
+    gap: 15px;
+  }
+  .skills .skill {
+    border-radius: 10px 10px 0 0;
+  }
   .projetos h2 {
-    font-size: 4.6666666667vw;
+    font-size: 7vw;
   }
   .footerconteiner h2 {
     font-size: 5.8333333333vw;

@@ -18,7 +18,7 @@ const Projetos = ({ projetos }: projetosProps) => {
         <>
         <article id="pag3" className="animate">
             <a href="#pag3">
-                <h1 className="title">Projects<div className="gradientLine"></div></h1>
+                <h1 className="title">Projetos<div className="gradientLine"></div></h1>
             </a>
 
             <ul className="projetos">
