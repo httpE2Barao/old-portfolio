@@ -9,21 +9,21 @@ import Projetos from "./components/projetos";
 import Contatos from "./components/contatos";
 
 function App() {
-    return (
-      <div className="App">
+  return (
+    <div className="App">
 
-        <Header />
-        
-        <div className="Main">
+      <Header />
+
+      <div className="Main">
 
         <Apresentacao />
 
         <Sobre />
 
-        <Habilidades 
+        <Habilidades
           itens={[
             { title: 'HTML5', src: 'Imagens/html.svg', alt: 'HyperText Markup Language', link: 'https://developer.mozilla.org/pt-BR/docs/Web/HTML' },
-            { title: 'CSS3', src: 'Imagens/css.svg', alt: 'Cascading Style Sheets', link: 'https://developer.mozilla.org/pt-BR/docs/Web/CSS' }, 
+            { title: 'CSS3', src: 'Imagens/css.svg', alt: 'Cascading Style Sheets', link: 'https://developer.mozilla.org/pt-BR/docs/Web/CSS' },
             { title: `Photoshop`, src: 'Imagens/photoshop.svg', alt: 'Editor de Imagem da abode', link: 'https://www.adobe.com/products/photoshop.html' },
             { title: 'JavaScript', src: 'Imagens/javascript.svg', alt: 'Linguagem de Programação', link: 'https://developer.mozilla.org/pt-BR/docs/Web/JavaScript' },
             { title: 'TypeScript', src: 'Imagens/typescript.svg', alt: 'Linguagem de Programação', link: 'https://www.typescriptlang.org/' },
@@ -35,32 +35,32 @@ function App() {
             { title: 'Web Design', src: 'Imagens/uiux.svg', alt: 'User Interface / Experience', link: 'https://www.alura.com.br/artigos/ux-e-ui-conheca-as-semelhancas-e-diferencas-entre-ambos' },
             { title: `ㅤ Amazon ㅤ Web`, src: 'Imagens/aws.svg', alt: 'Amazon Web Services', link: 'https://aws.amazon.com/pt/' },
           ]}
-          />
+        />
 
-        <Projetos 
+        <Projetos
           projetos={[
-            { title: 'Negociações', src: './Imagens/project_negociacoes.png', website: 'https://code-study-rho.vercel.app/TypeScript/Negocia%C3%A7%C3%B5es/app/dist/index.html', github: 'https://github.com/httpE2Barao/Code-study/tree/main/TypeScript/Negocia%C3%A7%C3%B5es', description: 'Este é um projeto que consome uma API externa e aplica as boas práticas do Typescript. Ele garante a qualidade do código durante a compilação, não permite a geração de código com erros, usa typagem estática e orientação a objeto. Ele também utiliza decorators para adicionar funcionalidades extras às classes, métodos e propriedades. Além disso, ele trata os possíveis erros da API com um micro framework que facilita o gerenciamento de rotas, requisições e respostas.'},
-            { title: 'Video Play', src: './Imagens/project_video-play.png', website: 'https://video-play-nine.vercel.app/', github: 'https://github.com/httpE2Barao/VideoPlay', description: 'Neste projeto, eu utilizei CSS avançado e Javascript avançado para criar uma interface dinâmica e responsiva. Com o CSS, eu apliquei Flex Box e Grid layout para organizar os elementos da página de forma flexível e adaptável. Com o Javascript, eu usei Fetch API e Async Functions para fazer requisições assíncronas a uma API externa e manipular os dados recebidos. O código também conta com throw errors para lidar com possíveis erros na comunicação com a API ou na manipulação dos dados.'},
-            { title: 'Sincronário Maia', src: './Imagens/project_sincronario.png', website: 'https://sincronario.vercel.app/', github: 'https://github.com/httpE2Barao/Sincronario', description: 'Este projeto usa React e JavaScript para criar uma interface dinâmica e interativa. Utilizando componentes React para organizar o código em partes reutilizáveis e funções do React, como useEffect e useState, para gerenciar o estado e os efeitos colaterais da aplicação. O objetivo é demonstrar as possibilidades e vantagens de usar essas tecnologias para desenvolver aplicações web modernas e responsivas.'},
-            { title: 'Books', src: './Imagens/project_books-react.png', website: 'https://books-react-project-a.vercel.app/', github: 'https://github.com/httpE2Barao/Books_react-project', description: 'Este é um projeto que usa Typescript, React e CSS avançado para criar uma interface de usuário responsiva e elegante. Typescript garante a segurança dos tipos e evita erros de compilação. React permite reutilizar componentes e criar uma experiência dinâmica. CSS avançado usa mobile first, media queries e variáveis para adaptar o layout aos diferentes tamanhos de tela e preferências do usuário.'},
-            { title: 'Stopwatch', src: './Imagens/project_stopwatch.png', website: 'https://stopwatch-react-app0.vercel.app/', github: 'https://github.com/httpE2Barao/Stopwatch-react-app', description: 'Este é um projeto que usa as seguintes tecnologias: React, Typescript e Sass. Com React, criei componentes reutilizáveis que usam os hooks useState e useEffect para gerenciar o estado e os efeitos colaterais. Com Typescript, eu defini interfaces para os tipos de dados, fiz conversão deles e evitei conflitos de tipagem. Com Sass, eu estilizei os componentes com variáveis e a adaptação com Media Queries.'},
-            { title: 'Alura Books', src: './Imagens/project_alura-books.png', website: 'https://alura-books-httpe2barao.vercel.app/', github: 'https://github.com/httpE2Barao/AluraBooks', description: 'Este projeto usa Javascript para criar um site de livros que permite ao usuário filtrar os livros por categorias ou disponibilidade, ordenar por preço, aplicação de um desconto de 30% nos livros. O projeto usa lógica de programação Javascript com vários métodos como o filter, forEach, map, reduce e sort para manipular os livros e gerar o conteúdo dinâmico do site.'},
-            { title: 'Número secreto', src: './Imagens/project_secret-number.png', website: 'https://jogo-numero-secreto-3425ysutw-httpe2barao.vercel.app/', github: 'https://github.com/httpE2Barao/Numero-secreto', description: 'Este é um projeto que usa Javascript com várias funcionalidades, lógica para sortear um número aleatório, para validação se é maior ou menor que o número secreto, conversão de dados, API externa para o reconhecimento de voz. O objetivo é adivinhar o número secreto que o computador escolheu entre 10 e 1000 usando o seu microfone. O computador vai te dar dicas se o seu palpite é maior ou menor que o número secreto. Se você acertar, pode jogar novamente ou sair do jogo dizendo "Game over".'},
-            { title: 'Moni Bank', src: './Imagens/project_moni-bank.png', website: 'https://httpe2barao.github.io/MoniBank/pages/abrir-conta-form.html', github: 'https://github.com/httpE2Barao/MoniBank', description: 'O projeto usa Javascript para criar uma conta em um site de banco. Ele tem boas práticas de validação de formulários, como verificar se o usuário é maior de idade, se o CPF tem os dígitos válidos e com a funcionalidade de tirar foto pelo webcam. Ele também trata os erros que podem ocorrer com dados inválidos. O projeto é simples, mas mostra como usar a lógica de programação para fazer uma aplicação web de cadastro.'},
-            { title: 'Projeto de Login', src: './Imagens/project_login-responsivo.png', website: 'https://projeto-login-three.vercel.app/', github: 'https://github.com/httpE2Barao/Projeto-login', description: 'Neste projeto, eu usei UI (User Interface) para criar uma interface simples e intuitiva para um site de login. Eu usei CSS adaptativo com media queries para ajustar o layout de acordo com o tamanho da tela do usuário. Eu também usei Javascript para fazer uma validação de usuário e senha simples, verificando se os campos estão preenchidos e se correspondem aos dados armazenados localmete. PS: o usuário e a senha é "admin"'},
+            { title: 'Negociações', src: './Imagens/project_negociacoes.png', website: 'https://negocicoes.vercel.app/dist/index.html', github: 'https://github.com/httpE2Barao/Code-study/tree/main/TypeScript/Negocia%C3%A7%C3%B5es', description: 'Este é um projeto que consome uma API externa e aplica as boas práticas do Typescript. Ele garante a qualidade do código durante a compilação, não permite a geração de código com erros, usa typagem estática e orientação a objeto. Ele também utiliza decorators para adicionar funcionalidades extras às classes, métodos e propriedades. Além disso, ele trata os possíveis erros da API com um micro framework que facilita o gerenciamento de rotas, requisições e respostas.' },
+            { title: 'Video Play', src: './Imagens/project_video-play.png', website: 'https://video-play-nine.vercel.app/', github: 'https://github.com/httpE2Barao/VideoPlay', description: 'Neste projeto, eu utilizei CSS avançado e Javascript avançado para criar uma interface dinâmica e responsiva. Com o CSS, eu apliquei Flex Box e Grid layout para organizar os elementos da página de forma flexível e adaptável. Com o Javascript, eu usei Fetch API e Async Functions para fazer requisições assíncronas a uma API externa e manipular os dados recebidos. O código também conta com throw errors para lidar com possíveis erros na comunicação com a API ou na manipulação dos dados.' },
+            { title: 'Sincronário Maia', src: './Imagens/project_sincronario.png', website: 'https://sincronario.vercel.app/', github: 'https://github.com/httpE2Barao/Sincronario', description: 'Este projeto usa React e JavaScript para criar uma interface dinâmica e interativa. Utilizando componentes React para organizar o código em partes reutilizáveis e funções do React, como useEffect e useState, para gerenciar o estado e os efeitos colaterais da aplicação. O objetivo é demonstrar as possibilidades e vantagens de usar essas tecnologias para desenvolver aplicações web modernas e responsivas.' },
+            { title: 'Books', src: './Imagens/project_books-react.png', website: 'https://books-react-project-a.vercel.app/', github: 'https://github.com/httpE2Barao/Books_react-project', description: 'Este é um projeto que usa Typescript, React e CSS avançado para criar uma interface de usuário responsiva e elegante. Typescript garante a segurança dos tipos e evita erros de compilação. React permite reutilizar componentes e criar uma experiência dinâmica. CSS avançado usa mobile first, media queries e variáveis para adaptar o layout aos diferentes tamanhos de tela e preferências do usuário.' },
+            { title: 'Stopwatch', src: './Imagens/project_stopwatch.png', website: 'https://stopwatch-react-app0.vercel.app/', github: 'https://github.com/httpE2Barao/Stopwatch-react-app', description: 'Este é um projeto que usa as seguintes tecnologias: React, Typescript e Sass. Com React, criei componentes reutilizáveis que usam os hooks useState e useEffect para gerenciar o estado e os efeitos colaterais. Com Typescript, eu defini interfaces para os tipos de dados, fiz conversão deles e evitei conflitos de tipagem. Com Sass, eu estilizei os componentes com variáveis e a adaptação com Media Queries.' },
+            { title: 'Alura Books', src: './Imagens/project_alura-books.png', website: 'https://alura-books-httpe2barao.vercel.app/', github: 'https://github.com/httpE2Barao/AluraBooks', description: 'Este projeto usa Javascript para criar um site de livros que permite ao usuário filtrar os livros por categorias ou disponibilidade, ordenar por preço, aplicação de um desconto de 30% nos livros. O projeto usa lógica de programação Javascript com vários métodos como o filter, forEach, map, reduce e sort para manipular os livros e gerar o conteúdo dinâmico do site.' },
+            { title: 'Número secreto', src: './Imagens/project_secret-number.png', website: 'https://jogo-numero-secreto-3425ysutw-httpe2barao.vercel.app/', github: 'https://github.com/httpE2Barao/Numero-secreto', description: 'Este é um projeto que usa Javascript com várias funcionalidades, lógica para sortear um número aleatório, para validação se é maior ou menor que o número secreto, conversão de dados, API externa para o reconhecimento de voz. O objetivo é adivinhar o número secreto que o computador escolheu entre 10 e 1000 usando o seu microfone. O computador vai te dar dicas se o seu palpite é maior ou menor que o número secreto. Se você acertar, pode jogar novamente ou sair do jogo dizendo "Game over".' },
+            { title: 'Moni Bank', src: './Imagens/project_moni-bank.png', website: 'https://httpe2barao.github.io/MoniBank/pages/abrir-conta-form.html', github: 'https://github.com/httpE2Barao/MoniBank', description: 'O projeto usa Javascript para criar uma conta em um site de banco. Ele tem boas práticas de validação de formulários, como verificar se o usuário é maior de idade, se o CPF tem os dígitos válidos e com a funcionalidade de tirar foto pelo webcam. Ele também trata os erros que podem ocorrer com dados inválidos. O projeto é simples, mas mostra como usar a lógica de programação para fazer uma aplicação web de cadastro.' },
+            { title: 'Projeto de Login', src: './Imagens/project_login-responsivo.png', website: 'https://projeto-login-three.vercel.app/', github: 'https://github.com/httpE2Barao/Projeto-login', description: 'Neste projeto, eu usei UI (User Interface) para criar uma interface simples e intuitiva para um site de login. Eu usei CSS adaptativo com media queries para ajustar o layout de acordo com o tamanho da tela do usuário. Eu também usei Javascript para fazer uma validação de usuário e senha simples, verificando se os campos estão preenchidos e se correspondem aos dados armazenados localmete. PS: o usuário e a senha é "admin"' },
           ]}
-          />
+        />
 
         <Contatos
           contatos={[
-            { title: 'LinkedIn', src: './Imagens/linkedin.svg', info: '@e2barao',  link: 'https://www.linkedin.com/in/e2barao/'},
-            { title: 'GitHub', src: './Imagens/github.svg', info: '@httpE2Barao',  link: 'https://www.github.com/httpE2Barao'},
-            { title: 'WhatsApp', src: './Imagens/phone.svg', info: '(41) 99804-6755',  link: 'https://api.whatsapp.com/send?phone=551998046755'},
-            { title: 'E-mail', src: './Imagens/mail.svg', info: 'e2barao@hotmail.com',  link: 'mailto:e2barao@hotmail.com'},
+            { title: 'LinkedIn', src: './Imagens/linkedin.svg', info: '@e2barao', link: 'https://www.linkedin.com/in/e2barao/' },
+            { title: 'GitHub', src: './Imagens/github.svg', info: '@httpE2Barao', link: 'https://www.github.com/httpE2Barao' },
+            { title: 'WhatsApp', src: './Imagens/phone.svg', info: '(41) 99804-6755', link: 'https://api.whatsapp.com/send?phone=551998046755' },
+            { title: 'E-mail', src: './Imagens/mail.svg', info: 'e2barao@hotmail.com', link: 'mailto:e2barao@hotmail.com' },
           ]}
         />
-          </div>
       </div>
-    )
+    </div>
+  )
 }
 export default App;
