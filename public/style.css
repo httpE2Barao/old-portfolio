@@ -750,7 +750,7 @@ main a {
   }
   #pag1 {
     padding-top: 20%;
-    scroll-margin-top: 50px;
+    scroll-margin-top: 20px;
   }
   #pag2 a {
     padding: 0;
@@ -780,9 +780,6 @@ main a {
   }
   .title {
     font-size: 10.5vw;
-  }
-  #pag1 {
-    scroll-margin-top: 15px;
   }
   #pag2 {
     scroll-margin-top: 90px;
