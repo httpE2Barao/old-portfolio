@@ -19,7 +19,7 @@ const Sobre = () => {
             para usuários em todo o mundo.
           </p>
           <label htmlFor="bt">Download CV</label>
-          <a href="/cv_minimalista-eliasbarao" download className="bt">Currículo Minimalista</a>
+          <a href="/cv_minimalista-eliasbarao.pdf" download className="bt">Currículo Minimalista</a>
         </div>
       </section>
     </article>
