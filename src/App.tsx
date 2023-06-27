@@ -30,6 +30,7 @@ function App() {
             { title: 'GitHub', src: 'Imagens/github.svg', alt: 'Versionamento de código', link: 'https://github.com/' },
             { title: 'SASS', src: 'Imagens/sass.svg', alt: 'Syntactically Awesome Style Sheets', link: 'https://sass-lang.com/' },
             { title: 'Bootstrap', src: 'Imagens/bootstrap.svg', alt: 'Framework Bootstrap', link: 'https://getbootstrap.com/' },
+            { title: 'Tailwind', src: 'Imagens/tailwind.svg', alt: 'Framework Tailwind CSS', link: 'https://tailwindcss.com/' },
             { title: 'React', src: 'Imagens/react.svg', alt: 'Biblioteca de Javascript e Typescript', link: 'https://react.dev/' },
             { title: 'Figma', src: 'Imagens/figma.svg', alt: 'Editor gráfico de design', link: 'https://www.figma.com' },
             { title: 'CSS in JS', src: 'Imagens/styledcomponents.svg', alt: 'Styled-components', link: 'https://styled-components.com/' },
