@@ -13,7 +13,7 @@ const Sobre = () => {
           <p>
             Sou um desenvolvedor Front-End que adora se expressar e transformar ideias em realidade.
             Tenho formação em audiovisual e experiência com design (UI/UX), comunicação e relações interpessoais.
-            Uso ferramentas modernas como React, Javascript e Typescript para criar aplicações web acessíveis e responsivas,
+            Uso ferramentas modernas como React, Javascript, Typescript, Bootstrap, Tailwind... para criar aplicações web acessíveis e responsivas,
             com código limpo e eficiente. Além de ser autodidata, artístico e criativo, também sou um gamer entusiasta e
             tenho interesse nas Artes e Espiritualidade. Meu objetivo é criar experiências online inovadoras e acessíveis
             para usuários em todo o mundo.
