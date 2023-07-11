@@ -471,8 +471,9 @@ header nav .menu-icon .hidden {
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
 }
-.description img {
-  width: 400px;
+.description .description__flex img {
+  min-width: 350px;
+  max-width: 500px;
   border-radius: 10px;
 }
 .description .projeto__title {

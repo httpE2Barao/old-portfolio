@@ -3,7 +3,7 @@
 #pag3 {
     @include pullBack;
     height: fit-content;
-    
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -11,27 +11,30 @@
 
     scroll-margin-top: 100px;
     scroll-snap-margin-top: 100px;
-    
-    label{
+
+    label {
         display: none
     }
-    input{
+
+    input {
         color: black;
         margin-top: 30px;
     }
+
     @include input-gradient;
 
-    .projetos{
+    .projetos {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         gap: 30px;
-        .projeto{
+
+        .projeto {
             height: fit-content;
             display: flex;
             flex-direction: column;
             align-items: center;
-            
+
             background-color: $fundo-claro;
             padding: 0 20px 20px;
             border-radius: 15px;
@@ -40,18 +43,19 @@
 
             @include boxHover;
 
-            .projeto__title{
+            .projeto__title {
                 color: #ffff;
                 width: fit-content;
                 padding: 10px 0;
                 font-weight: 600;
             }
 
-            img{
+            img {
                 width: 80vw;
                 max-width: 300px;
                 border-radius: 10px;
-                &:hover{
+
+                &:hover {
                     cursor: pointer;
                 }
             }
@@ -65,7 +69,7 @@
     position: fixed;
     align-items: center;
     justify-content: center;
-    
+
     z-index: 9999;
     top: 0;
     width: 100vw;
@@ -73,10 +77,15 @@
 
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    img {
-        width: 400px;
-        border-radius: 10px;
+
+    .description__flex {
+        img {
+            min-width: 350px;
+            max-width: 500px;
+            border-radius: 10px;
+        }
     }
+
     .projeto__title {
         font-size: $tamanho-relativo-fonte / 2;
         text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.773);
@@ -87,9 +96,11 @@
         margin-bottom: 20px;
         font-weight: 600;
     }
+
     .gradientLine {
         height: 6px;
     }
+
     .description__flex {
         background-color: rgba(255, 255, 255, 0.674);
         border-radius: 20px;
@@ -98,6 +109,7 @@
         gap: 50px;
         align-items: center;
         justify-content: space-between;
+
         p {
             font-size: $tamanho-relativo-fonte * 0.18;
             font-weight: 500;
@@ -105,22 +117,26 @@
             line-height: 1.5em;
         }
     }
+
     .description__buttons {
         display: flex;
         margin-top: 30px;
         gap: 50px;
         height: 50px;
+
         img {
             background-color: lightgray;
             padding: 6px;
             width: 40px;
             height: 40px;
             border-radius: 12px;
+
             &:hover {
                 background-color: $roxo;
                 cursor: pointer;
             }
         }
+
         @include input-gradient;
     }
 }
