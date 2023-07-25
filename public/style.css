@@ -174,7 +174,7 @@ header nav .menu-icon .hidden {
 }
 .apresentacao .perfil img {
   transform: translateY(-9%);
-  max-height: 300px;
+  max-height: 450px;
   max-width: 300px;
   -webkit-clip-path: polygon(19% 15%, 92% 10%, 84% 93%, 13% 100%);
   clip-path: polygon(19% 15%, 92% 10%, 84% 93%, 13% 100%);
@@ -275,7 +275,7 @@ header nav .menu-icon .hidden {
   width: 100%;
 }
 .cards div img {
-  width: 20vw;
+  width: 60vw;
   max-width: 150px;
   border-radius: 20px;
   position: relative;
@@ -777,7 +777,6 @@ main a {
   }
   .apresentacao .perfil img {
     transform: translateY(-5%);
-    max-width: 200px;
   }
   .title {
     font-size: 10.5vw;
@@ -828,8 +827,9 @@ main a {
   .apresentacao .perfil img {
     position: relative;
     top: -5px;
-    max-width: 45vw;
-    max-height: 40vw;
+    height: 500px;
+    width: 400px;
+    max-width: 60vw;
   }
   .projetos h2 {
     font-size: 1.5rem;

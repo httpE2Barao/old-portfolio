@@ -52,7 +52,6 @@
         .perfil {
             img {
                 transform: translateY(-5%);
-                max-width: 200px;
             }
         }
     }
@@ -123,8 +122,9 @@
             img {
                 position: relative;
                 top: -5px;
-                max-width: 45vw;
-                max-height: 40vw;
+                height: 500px;
+                width: 400px;
+                max-width: 60vw;
             }
         }
     }
