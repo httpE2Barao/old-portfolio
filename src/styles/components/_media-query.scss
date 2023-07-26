@@ -89,11 +89,19 @@
         }
     }
 
-    .description .projeto__title {
-        font-size: 8vw;
-    }
-    .description .description__buttons .bt {
-        font-size: 3.5vw;
+    .description {
+        .projeto__title {
+            font-size: 8vw;
+            margin-bottom: 0;
+        }
+        .description__buttons .bt {
+            font-size: 3.5vw;
+        }
+        .description__flex {
+            p {
+                background-color: rgba(255, 255, 255, 0.674);
+            }
+        }
     }
 
     .footerconteiner {
@@ -135,6 +143,10 @@
         }
     }
 
+    .description__flex {
+        background-color: rgba(255, 255, 255, 0.674);
+    }
+
     .footerconteiner {
         h2 {
             font-size: $tamanho-fonte / 1.5;
@@ -164,19 +176,20 @@
             justify-content: space-around;
             gap: 17px;
             padding: 1em;
-            height: 60vh;
             flex-flow: column nowrap;
             p {
                 text-align: center;
-                padding: 0 5vw;
+                padding: 20px 5vw;
+                border-radius: 1em;
                 max-width: 90%;
-                font-size: $tamanho-fonte * .25;
+                font-size: $tamanho-fonte * .3;
             }
             img {
                 width: 75%;
             }
         }
         .description__buttons {
+
             .bt {
                 width: auto;
                 height: 40px;
@@ -189,7 +202,7 @@
     }
 }
 
-@media screen and (min-width: 720px) and (max-width: 990px) {
+@media screen and (min-width: 720px) {
     #pag1 {
         .sobreMim {
             flex-direction: column;
@@ -211,6 +224,14 @@
                     padding: 20px 0;
                 }
             }
+        }
+    }
+    .description {
+        .description__flex {
+            height: 50vh;
+        }
+        .description__buttons {
+            margin-top: 4em;
         }
     }
 

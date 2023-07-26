@@ -78,49 +78,35 @@
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
 
-    .description__flex {
-        img {
-            min-width: 350px;
-            max-width: 500px;
-            border-radius: 10px;
-        }
-    }
-
-    .projeto__title {
-        font-size: $tamanho-relativo-fonte / 2;
-        text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.773);
-        color: #fff;
-        width: auto;
-        padding: .5em;
-        border-radius: 15px;
-        margin-bottom: 20px;
-        font-weight: 600;
-    }
-
     .gradientLine {
         height: 6px;
     }
 
     .description__flex {
-        background-color: rgba(255, 255, 255, 0.674);
         border-radius: 20px;
+        max-width: 85%;
         padding: 2em;
         display: flex;
         gap: 50px;
         align-items: center;
         justify-content: space-between;
 
+        img {
+            min-width: 350px;
+            max-width: 500px;
+            border-radius: 10px;
+        }
+
         p {
-            font-size: $tamanho-relativo-fonte * 0.18;
+            font-size: $tamanho-relativo-fonte / 4.5;
             font-weight: 500;
-            max-width: 30vw;
+            max-width: 45vw;
             line-height: 1.5em;
         }
     }
 
     .description__buttons {
         display: flex;
-        margin-top: 30px;
         gap: 50px;
         height: 50px;
 

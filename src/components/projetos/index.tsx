@@ -41,7 +41,6 @@ const Projetos = ({ projetos }: projetosProps) => {
         </article>
         {open !== -1 && (
                 <article className="description">
-                    <h2 className="projeto__title">{projetos[open].title}<div className="gradientLine"></div></h2>
                     <div className="description__flex">
                         <img src={projetos[open].src} alt={`Projeto ${projetos[open].title}`} />
                         <p>{projetos[open].description}</p>
