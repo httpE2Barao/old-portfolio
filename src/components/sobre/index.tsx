@@ -20,7 +20,7 @@ const Sobre = () => {
           Meu objetivo é transcender as expectativas e proporcionar aos usuários uma jornada digital única e marcante.
           </p>
           <label htmlFor="bt">Download CV</label>
-          <a href="/cv_minimalista-eliasbarao.pdf" download className="bt">Download CV</a>
+          <a href="/cv-eliasbarao-2024.pdf" download className="bt">Download CV</a>
         </div>
       </section>
     </article>
